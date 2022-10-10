@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dd624ec-97f2-4e9b-a40d-b9594d3974f8" name="Changes" comment="" />
+    <list default="true" id="9dd624ec-97f2-4e9b-a40d-b9594d3974f8" name="Changes" comment="day2 commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +17,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -28,6 +31,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2Fnn7u5gwJspEoMEBu1HYwAiJGg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -68,6 +72,36 @@
       <option name="presentableId" value="Default" />
       <updated>1665136555810</updated>
     </task>
+    <task id="LOCAL-00001" summary="day2 commit">
+      <created>1665403337249</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665403337249</updated>
+    </task>
+    <task id="LOCAL-00002" summary="day2 commit">
+      <created>1665403370070</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665403370070</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="day2 commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="day2 commit" />
   </component>
 </project>
