@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.harini.app</groupId>
-	<artifactId>Harini Calculator</artifactId>
+	<artifactId>Calculator-Application</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Calculator-Application</name>
 	<description>Demo project for Spring Boot</description>
@@ -27,7 +27,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+    </dependencies>
 
 	<build>
 		<plugins>
