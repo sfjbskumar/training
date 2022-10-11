@@ -2,7 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Sathya/Day1/simple-maven-app" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/SeshaGayathri/Day 1/SimpleMaven" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/SeshaGayathri/Day 2/FirstSpringBootAPP" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/SeshaGayathri/Day 3/Calculator" vcs="Git" />
