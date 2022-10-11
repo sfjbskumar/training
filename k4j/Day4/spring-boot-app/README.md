@@ -60,9 +60,7 @@ $ mvn spring-boot:run
 
 ```bash
 $ docker run -p 8080:8080 falcon007/spring-boot-app:0.0.1 
-#Don't try today
-#$ docker-compose  pull
-#$ docker-compose  up
+
 ```
 
 ## Looking docker image
@@ -72,5 +70,11 @@ $ docker run -p 8080:8080 falcon007/spring-boot-app:0.0.1
 ## Testing
 
 http://localhost:8080/
+
+#Before pushing image # don not try today
+docker tag kumar4javatraini/spring-boot-app:0.0.1 <yourdockerID>/<dockerreponame>
+docker push kumar4javatraining/spring-boot-app  
+docker-compose  pull
+docker-compose  up
 
 
