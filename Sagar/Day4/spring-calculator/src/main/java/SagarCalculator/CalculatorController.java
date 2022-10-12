@@ -1,12 +1,18 @@
-package com.rama.calculator;
+package SagarCalculator;
 
 
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public  class CalculatorController {
+     @Autowired
+    MyCalculator myCalculator;
+   // public final MyCalculator myCalculator = new MyCalculator();
+
 
     @GetMapping("/add")
 
@@ -28,5 +34,10 @@ public  class CalculatorController {
     public float division(@RequestParam(name = "a", required = true) int a,@RequestParam(name = "b", required = true) int b) {
 
         return a/b;
+    }
+
+    @GetMapping("/addstring")
+    public String addString(@RequestParam(name = "a", required = true) String a,@RequestParam(name = "b", required = true) String b) {
+        return myCalculator.addString(a,b);
     }
 }
