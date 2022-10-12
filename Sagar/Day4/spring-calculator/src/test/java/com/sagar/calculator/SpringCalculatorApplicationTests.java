@@ -1,4 +1,4 @@
-package com.rama.calculator;
+package com.sagar.calculator;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
