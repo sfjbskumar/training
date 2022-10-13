@@ -1,6 +1,8 @@
-package com.rama.calculator;
+package com.kumar.calculator;
 
 
+import com.kumar.calculator.MyCalculator;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -29,10 +31,10 @@ public  class CalculatorController {
 
         return a/b;
     }
-
-    @GetMapping("/addstring")
-    public String addString(@RequestParam(name = "a", required = true) String a,@RequestParam(name = "b", required = true) String b) {
+    @Autowired
+    MyCalculator myCalculator;
+    @GetMapping("/addString")
+    public String addString(@RequestParam(name ="a",required =true) String a,@RequestParam(name="b",required=true) String b){
         return myCalculator.addString(a,b);
     }
-
 }
