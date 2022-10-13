@@ -29,4 +29,10 @@ public  class CalculatorController {
 
         return a/b;
     }
+
+    @GetMapping("/addstring")
+    public String addString(@RequestParam(name = "a", required = true) String a,@RequestParam(name = "b", required = true) String b) {
+        return myCalculator.addString(a,b);
+    }
+
 }
