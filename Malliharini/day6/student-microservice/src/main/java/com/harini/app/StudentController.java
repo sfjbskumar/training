@@ -16,7 +16,7 @@ public class StudentController {
         return result;
     }
 
-    @GetMapping("/get/all")
+    @GetMapping("/get/allstudent")
     public Map<String,Student> getStudent(){
         return studentMap;
     }
