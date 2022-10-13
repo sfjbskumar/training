@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public  class CalculatorController {
-     @Autowired
-    MyCalculator myCalculator;
-   // public final MyCalculator myCalculator = new MyCalculator();
+    //@Autowired
+   // MyCalculator myCalculator;
+    public final MyCalculator myCalculator = new MyCalculator();
 
 
     @GetMapping("/add")
