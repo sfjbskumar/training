@@ -1,10 +1,10 @@
-package com.sagar.calculator;
+package com.student.app;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringCalculatorApplicationTests {
+class StudentMicroserviceApplicationTests {
 
 	@Test
 	void contextLoads() {
