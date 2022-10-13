@@ -1,0 +1,6 @@
+version: '3.2'
+services:
+  sprig-boot-app:
+    image: harshad132/first-spring-repo:latest
+    ports:
+      - "8080:8080"
