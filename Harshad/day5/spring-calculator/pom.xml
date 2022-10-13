@@ -5,14 +5,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.7.3</version>
+		<version>2.7.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.student.app</groupId>
-	<artifactId>student-microservice-security</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>student-microservice-security</name>
-	<description>student microservice for update</description>
+	<groupId>com.example.app</groupId>
+	<artifactId>harshad-calculator</artifactId>
+	<version>0.0.2-RELEASE</version>
+	<name>harshad-calculator</name>
+	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -21,10 +21,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
