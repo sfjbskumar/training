@@ -1,4 +1,4 @@
-package com.rama.app.controller;
+package com.sathya.app.controller;
 
 import org.springframework.web.bind.annotation.*;
 
