@@ -5,7 +5,6 @@ public class App {
         greeting.sayHello();
         greeting.sayWelcome();
         greeting.sayHi();
-        greeting.sayThanks();
 
     }
 }
