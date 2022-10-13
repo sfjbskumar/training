@@ -7,5 +7,9 @@ import org.springframework.stereotype.Component;
         public String addString(String a,String b){
             return a.concat(b);
         }
+        public float mod(int a, int b){
+            return a%b;
+        }
+
     }
 
