@@ -1,6 +1,6 @@
 version: '3.2'
 services:
   sprig-boot-app:
-    image: kumar4javatraining/spring-boot-app:latest
+    image: pradeepkumar333/dockerspringboot:latest
     ports:
       - "8082:8082"
