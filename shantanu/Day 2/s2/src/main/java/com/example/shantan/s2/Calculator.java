@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Calculator
 {
-    /* @Autowired
-    MyCalculator myCalculator;*/
+    @Autowired
+    MyCalculator myCalculator;
     private final MyCalculator myCalculator;
     @GetMapping("/add")
     public float add(@RequestParam(name = "a", required = true) float a, @RequestParam(name = "b", required = true) float b)
