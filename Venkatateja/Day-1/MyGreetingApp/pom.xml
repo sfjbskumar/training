@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.7.4</version>
+    <relativePath/> <!-- lookup parent from repository -->
+  </parent>
+  <groupId>com.example</groupId>
+  <artifactId>Calculator</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>MyCalculator</name>
+  <description>Demo project for Spring Boot</description>
+  <properties>
+    <java.version>17</java.version>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">-->
+<!--  <modelVersion>4.0.0</modelVersion>-->
+<!--  <groupId>com.rama.data</groupId>-->
+<!--  <artifactId>simple-maven-app</artifactId>-->
+<!--  <packaging>jar</packaging>-->
+<!--  <version>1.0-SNAPSHOT</version>-->
+<!--  <name>simple-maven-app</name>-->
+<!--  <url>http://maven.apache.org</url>-->
+<!--  <properties>-->
+<!--    <maven.compiler.source>1.8</maven.compiler.source>-->
+<!--    <maven.compiler.target>1.8</maven.compiler.target>-->
+<!--    <java.version>11</java.version>-->
+<!--  </properties>-->
+<!--  <dependencies>-->
+<!--    <dependency>-->
+<!--      <groupId>junit</groupId>-->
+<!--      <artifactId>junit</artifactId>-->
+<!--      <version>4.13.2</version>-->
+<!--      <scope>test</scope>-->
+<!--    </dependency>-->
+<!--  </dependencies>-->
+<!--</project>-->
+<!--&lt;!&ndash;        4.13.2&ndash;&gt;-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--&lt;!&ndash;<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&ndash;&gt;-->
+<!--&lt;!&ndash;  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">&ndash;&gt;-->
+<!--&lt;!&ndash;  <modelVersion>4.0.0</modelVersion>&ndash;&gt;-->
+
+<!--&lt;!&ndash;  <groupId>org.example</groupId>&ndash;&gt;-->
+<!--&lt;!&ndash;  <artifactId>MyGreetingApp</artifactId>&ndash;&gt;-->
+<!--&lt;!&ndash;  <version>1.0-SNAPSHOT</version>&ndash;&gt;-->
+<!--&lt;!&ndash;  <packaging>jar</packaging>&ndash;&gt;-->
+
+<!--&lt;!&ndash;  <name>MyGreetingApp</name>&ndash;&gt;-->
+<!--&lt;!&ndash;  <url>http://maven.apache.org</url>&ndash;&gt;-->
+
+<!--&lt;!&ndash;  <properties>&ndash;&gt;-->
+<!--&lt;!&ndash;    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>&ndash;&gt;-->
+<!--&lt;!&ndash;  </properties>&ndash;&gt;-->
+
+<!--&lt;!&ndash;  <dependencies>&ndash;&gt;-->
+<!--&lt;!&ndash;    <dependency>&ndash;&gt;-->
+<!--&lt;!&ndash;      <groupId>junit</groupId>&ndash;&gt;-->
+<!--&lt;!&ndash;      <artifactId>junit</artifactId>&ndash;&gt;-->
+<!--&lt;!&ndash;      <version>3.8.1</version>&ndash;&gt;-->
+<!--&lt;!&ndash;      <scope>test</scope>&ndash;&gt;-->
+<!--&lt;!&ndash;    </dependency>&ndash;&gt;-->
+<!--&lt;!&ndash;    <dependency>&ndash;&gt;-->
+<!--&lt;!&ndash;      <groupId>junit</groupId>&ndash;&gt;-->
+<!--&lt;!&ndash;      <artifactId>junit</artifactId>&ndash;&gt;-->
+<!--&lt;!&ndash;      <version>4.13.2</version>&ndash;&gt;-->
+<!--&lt;!&ndash;      <scope>test</scope>&ndash;&gt;-->
+<!--&lt;!&ndash;    </dependency>&ndash;&gt;-->
+<!--&lt;!&ndash;  </dependencies>&ndash;&gt;-->
+<!--&lt;!&ndash;</project>&ndash;&gt;-->

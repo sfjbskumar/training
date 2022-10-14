@@ -6,7 +6,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class calculator {
-
+    /* @Autowired
+   MyCalculator myCalculator;*/
+    private final MyCalculator myCalculator;
+    public calculator(MyCalculator myCalculator){this.myCalculator=myCalculator;}
     @GetMapping("add")
     public float addition(@RequestParam(name = "a", required = true) float a, @RequestParam(name = "b", required = true) float b) {
         return a+b;
@@ -25,6 +28,10 @@ public class calculator {
     public float divison(@RequestParam(name = "a", required = true) int a, @RequestParam(name = "b", required = true)int b) {
         return a/b;
 
+    }
+    @GetMapping("/addstring")
+    public String addString(@RequestParam(name = "a", required = true) String a,@RequestParam(name = "b", required = true) String b) {
+        return myCalculator.addString(a,b);
     }
 
 }
