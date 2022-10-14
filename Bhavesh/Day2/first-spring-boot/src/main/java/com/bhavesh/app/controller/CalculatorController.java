@@ -4,16 +4,20 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
+
 @RestController
 public class CalculatorController {
 
-    /* @Autowired
-MyCalculator myCalculator;*/
-    private final MyCalculator myCalculator;
 
-    public CalculatorController(MyCalculator myCalculator){
-        this.myCalculator =myCalculator;
-    }
+   @Autowired
+   MyCalculator myCalculator;
+//    private final MyCalculator myCalculator;
+//
+//    public CalculatorController(MyCalculator myCalculator){
+//        this.myCalculator =myCalculator;
+//    }
     @GetMapping("/add")
     public float addition(@RequestParam(name = "a", required = true) float a, @RequestParam(name = "b", required = true) float b) {
         return a+b;
