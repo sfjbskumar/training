@@ -11,25 +11,25 @@ public class EmployeeController {
     private Map<String,Employee> employeeMap= new HashMap<String,Employee>();
 
     @GetMapping("/get/employee")
-    public Employee getEmployee(@RequestParam String name){
-        Employee result= employeeMap.get(name);
+    public Employee getEmployee(@RequestParam String empname){
+        Employee result= employeeMap.get(empname);
         return result;
     }
     @PostMapping("save/employee")
-    public void SaveStudent(@RequestBody Student student){
-        String name= student.getName();
-        studentMap.put(name,student);
+    public void SaveEmployee(@RequestBody Employee employee){
+        String empname= employee.getEmpName();
+        employeeMap.put(empname,employee);
     }
     @PutMapping("update/employee")
-    public Student updateStudent(@RequestParam String name,@RequestParam String std){
-        Student result= studentMap.get(name);
-        result.setStd(std);
-        studentMap.put(name,result);
+    public Employee updateEmployee(@RequestParam String empname,@RequestParam float salary){
+        Employee result= employeeMap.get(empname);
+        result.setSalary(salary);
+        employeeMap.put(empname,result);
         return result;
 
     }
     @DeleteMapping("remove/employee")
-    public void deleteStudent(@RequestParam String name){
-        studentMap.remove(name);
+    public void deleteEmployee(@RequestParam String empname){
+       employeeMap.remove(empname);
     }
 }

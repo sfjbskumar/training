@@ -8,14 +8,14 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
 @Configuration
-public class StudentSecurity extends WebSecurityConfigurerAdapter {
+public class EmployeeSecurity extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.httpBasic().and().authorizeRequests()
-                .antMatchers(HttpMethod.POST, "/save/student").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.PUT, "/update/student").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.GET, "/get/student").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.GET, "/remove/student").hasAnyRole("ADMIN").and().csrf().disable().headers()
+                .antMatchers(HttpMethod.POST, "/save/employee").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.PUT, "/update/employee").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/get/employee").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/remove/employee").hasAnyRole("ADMIN").and().csrf().disable().headers()
                 .frameOptions().disable();
     }
 
@@ -23,7 +23,7 @@ public class StudentSecurity extends WebSecurityConfigurerAdapter {
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication().withUser("user123").password("{noop}password").roles("USER").and()
                 .withUser("admin123").password("{noop}password").roles("ADMIN").and().withUser("test123")
-                .password("{noop}password").roles("USER").and().withUser("ramashanker").password("{noop}password")
+                .password("{noop}password").roles("USER").and().withUser("sathya").password("{noop}password")
                 .roles("ADMIN");
     }
 }
