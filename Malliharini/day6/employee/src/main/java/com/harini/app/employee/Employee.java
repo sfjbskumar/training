@@ -1,4 +1,4 @@
-package com.harini.app;
+package com.harini.app.employee;
 
 import org.springframework.stereotype.Component;
 

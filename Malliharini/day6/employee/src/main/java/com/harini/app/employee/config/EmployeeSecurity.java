@@ -1,4 +1,4 @@
-package com.harini.app.config;
+package com.harini.app.employee.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -12,10 +12,10 @@ public class EmployeeSecurity extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.httpBasic().and().authorizeRequests()
-                .antMatchers(HttpMethod.POST, "/save/app").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.PUT, "/update/app").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.GET, "/get/app").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.GET, "/remove/app").hasAnyRole("ADMIN").and().csrf().disable().headers()
+                .antMatchers(HttpMethod.POST, "/save/student").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.PUT, "/update/student").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/get/student").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/remove/student").hasAnyRole("ADMIN").and().csrf().disable().headers()
                 .frameOptions().disable();
     }
 

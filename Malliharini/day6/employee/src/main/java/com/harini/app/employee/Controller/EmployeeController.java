@@ -1,36 +1,36 @@
-package com.harini.app.Controller;
+package com.harini.app.employee.Controller;
 
+import com.harini.app.employee.Employee;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.HashMap;
 import java.util.Map;
 
 @RestController
 public class EmployeeController {
 
-    private Map<String,Employee> EmployeeMap= new HashMap<String,Employee>();
+    private Map<String, Employee> employeeMap= new HashMap<String,Employee>();
 
-    @GetMapping("/get/app")
+    @GetMapping("/get/employee")
     public Employee getEmployee(@RequestParam String Empname){
-        Employee result= EmployeeMap.get(Empname);
+        Employee result= employeeMap.get(Empname);
         return result;
     }
-    @PostMapping("save/app")
+    @PostMapping("save/employee")
     public void SaveEmployee(@RequestBody Employee employee){
-        String Empname= EmployeeMap.getName();
-        EmployeeMap.put(Empname,employee);
+        String Empname= employee.getEmpname();
+        employeeMap.put(Empname,employee);
     }
-    @PutMapping("update/app")
+    @PutMapping("update/employee")
     public Employee updateEmployee(@RequestParam String Empname,@RequestParam String Department){
-        Employee result= EmployeeMap.get(Empname);
+        Employee result= employeeMap.get(Empname);
         result.setDepartment(Department);
-        EmployeeMap.put(Empname,result);
+        employeeMap.put(Empname,result);
         return result;
+
     }
-    @GetMapping("/get/all")
-    public Map<String,Employee> getEmpname(){
-        return EmployeeMap;}
-    @DeleteMapping("remove/app")
-    public void deleteEmployee(@RequestParam String Empname){
-        EmployeeMap.remove(Empname);
+    @DeleteMapping("remove/employee")
+    public void deleteStudent(@RequestParam String Empname){
+        employeeMap.remove(Empname);
     }
 }
