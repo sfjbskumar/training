@@ -12,10 +12,10 @@ public class StudentSecurity extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.httpBasic().and().authorizeRequests()
-                .antMatchers(HttpMethod.POST, "/save/student").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.PUT, "/update/student").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.GET, "/get/student").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.GET, "/remove/student").hasAnyRole("ADMIN").and().csrf().disable().headers()
+                .antMatchers(HttpMethod.POST, "/save/studentapp").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.PUT, "/update/studentapp").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/get/studentapp").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/remove/studentapp").hasAnyRole("ADMIN").and().csrf().disable().headers()
                 .frameOptions().disable();
     }
 
