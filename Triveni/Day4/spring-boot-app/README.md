@@ -1,4 +1,4 @@
-# Project
+ # Project
 This Apllication is use understand the basic security mechanism in sprict boot application.
 
 ##
@@ -41,7 +41,7 @@ $ mvn install dockerfile:build
 
 ```bash
 #docker login
-#$ docker push <repository-name>/springsecurity
+#$ docker login
 ```
 
 ## Running
@@ -59,7 +59,7 @@ $ mvn spring-boot:run
 ### Running the application in docker container
 
 ```bash
-$ docker run -p 8080:8080 falcon007/spring-boot-app:0.0.1 
+$ docker run -p 8080:8080 falcon007/spring-boot-app:0.0.1
 
 ```
 
@@ -72,7 +72,7 @@ $ docker run -p 8080:8080 falcon007/spring-boot-app:0.0.1
 http://localhost:8080/
 
 #Before pushing image # don not try today
-docker tag kumar4javatraini/spring-boot-app:0.0.1 <yourdockerID>/<dockerreponame>
+docker tag kumar4javatraining/spring-boot-app:0.0.1 <yourdockerID>/<dockerreponame>
 docker push kumar4javatraining/spring-boot-app  
 docker-compose  pull
 docker-compose  up
