@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.harini.app.employee.config;
+=======
+package com.harini.app.employeemicroservicesecurity.Config;
+>>>>>>> 20b73e0 (commit)
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -23,7 +27,14 @@ public class EmployeeSecurity extends WebSecurityConfigurerAdapter {
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication().withUser("user123").password("{noop}password").roles("USER").and()
                 .withUser("admin123").password("{noop}password").roles("ADMIN").and().withUser("test123")
+<<<<<<< HEAD
                 .password("{noop}password").roles("USER").and().withUser("ramashanker").password("{noop}password")
                 .roles("ADMIN");
     }
+=======
+                .password("{noop}password").roles("USER").and().withUser("sathya").password("{noop}password")
+                .roles("ADMIN");
+    }
+
+>>>>>>> 20b73e0 (commit)
 }
