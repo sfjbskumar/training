@@ -1,5 +1,6 @@
 package com.student.app;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -8,7 +9,8 @@ import java.util.Map;
 @RestController
 public class StudentController {
 
-    private Map<String,Student> studentMap= new HashMap<String,Student>();
+@Autowired
+    public Map<String,Student> studentMap= new HashMap<String,Student>();
 
     @GetMapping("/get/student")
     public Student getStudent(@RequestParam String name){
