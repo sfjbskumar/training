@@ -1,49 +1,50 @@
 package com.student.app;
 
-import org.springframework.web.bind.annotation.*;
+//import org.springframework.web.bind.annotation.*;
+//
+//import java.util.HashMap;
+//import java.util.Map;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+import com.student.app.Student;
+import com.student.app.StudentService;
 
 @RestController
-public class StudentController {
-
-    public Map<String,Student> studentMap= new HashMap<String,Student>();
-
-
-    @GetMapping("/get/student")
-    public Student getStudent(@RequestParam String name){
-        Student result= studentMap.get(name);
-        if (result == null) {
-            Student student= new Student("roll1","test","2nd");
-            return student;
-        }else
-        return result;
+public class StudentController
+{
+    //autowired the StudentService class
+    @Autowired
+    StudentService studentService;
+    //creating a get mapping that retrieves all the students detail from the database
+    @GetMapping("/student")
+    private List<Student> getAllStudent()
+    {
+        return studentService.getAllStudent();
     }
-    @PostMapping("save/student")
-    public Student SaveStudent(@RequestBody Student student){
-        String name= student.getName();
-        studentMap.put(name,student);
-        return student;
+    //creating a get mapping that retrieves the detail of a specific student
+    @GetMapping("/student/{id}")
+    private Student getStudent(@PathVariable("id") int id)
+    {
+        return studentService.getStudentById(id);
     }
-    @PutMapping("update/student")
-    public Student updateStudent(@RequestParam String name,@RequestParam String std){
-        Student result= studentMap.get(name);
-        if (result == null) {
-            Student student= new Student("roll1",name,"2nd");
-            student.setStd(std);
-            studentMap.put(name,student);
-            return student;
-        }else {
-            result.setStd(std);
-            studentMap.put(name, result);
-            return result;
-        }
-
+    //creating a delete mapping that deletes a specific student
+    @DeleteMapping("/student/{id}")
+    private void deleteStudent(@PathVariable("id") int id)
+    {
+        studentService.delete(id);
     }
-    @DeleteMapping("remove/student")
-    public String deleteStudent(@RequestParam String name){
-        studentMap.remove(name);
-        return name;
+    //creating post mapping that post the student detail in the database
+    @PostMapping("/student")
+    private int saveStudent(@RequestBody Student student)
+    {
+        studentService.saveOrUpdate(student);
+        return student.getId();
     }
 }
