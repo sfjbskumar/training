@@ -1,13 +1,12 @@
-package com.harini.app.employee;
+package com.rama.rest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EmployeeApplication {
-
+public class ReceiverApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(EmployeeApplication.class, args);
+		SpringApplication.run(ReceiverApplication.class, args);
 	}
 
 }

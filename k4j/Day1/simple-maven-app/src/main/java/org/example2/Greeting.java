@@ -12,6 +12,6 @@ package org.example2;
         return "Hi";
     }
     public String sayThanks(){
-        return "Thanks";
+        return "Thanks you";
     }
 }

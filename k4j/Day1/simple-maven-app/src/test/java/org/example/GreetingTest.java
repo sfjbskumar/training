@@ -39,7 +39,7 @@ public class GreetingTest
     @Test
     public void testThanks(){
         String result = greeting.sayThanks();
-        assertEquals("Thanks", greeting.sayThanks());
+        assertEquals("Thanks you", greeting.sayThanks());
     }
 
 
