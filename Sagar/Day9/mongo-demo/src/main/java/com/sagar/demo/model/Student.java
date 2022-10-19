@@ -1,35 +1,30 @@
 package com.sagar.demo.model;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-//mark class as an Entity
-@Entity
-//defining class name as Table name
-@Table
+@Document("groceryitems")
 public class Student
 {
     //mark id as primary key
     @Id
 //defining id as column name
-    @Column
+    //@Column
     private int id;
     //defining name as column name
-    @Column
+    //@Column
     private String name;
     //defining age as column name
-    @Column
+    //@Column
     private int age;
     //defining email as column name
-    @Column
+    //@Column
     private String email;
 
-    @Column
+    //@Column
     private int salary;
 
-    @Column
+    //@Column
     private String company;
     public int getId()
     {
