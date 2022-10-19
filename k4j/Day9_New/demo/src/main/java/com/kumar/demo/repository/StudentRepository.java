@@ -1,8 +1,8 @@
 package com.kumar.demo.repository;
 
-import org.springframework.data.repository.CrudRepository;
-import com.kumar.demo.model.Student;
-
-public interface StudentRepository extends CrudRepository<Student, Integer>
+import org.springframework.stereotype.Repository;
+        import com.kumar.demo.model.Student;
+@Repository
+public interface StudentRepository <Student, Integer>
 {
 }
