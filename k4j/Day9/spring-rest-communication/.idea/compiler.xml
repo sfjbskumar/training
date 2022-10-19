@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+<<<<<<< HEAD
+        <module name="employee-microservice-security" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="employee-microservice-security" target="11" />
+      <module name="employee-microservice-security (1)" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="employee-microservice-security" options="-parameters" />
+      <module name="employee-microservice-security (1)" options="-parameters" />
+=======
+        <module name="spring-receiver" />
+        <module name="spring-caller" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-caller" options="-parameters" />
+      <module name="spring-receiver" options="-parameters" />
+>>>>>>> 20b73e0 (commit)
+    </option>
+  </component>
+</project>
