@@ -2,13 +2,7 @@ package com.kumar.demo.controller;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import com.kumar.demo.model.Student;
 import com.kumar.demo.service.StudentService;
 //creating RestController
@@ -19,7 +13,7 @@ public class StudentController
     @Autowired
     StudentService studentService;
     //creating a get mapping that retrieves all the students detail from the database
-    @GetMapping("/student")
+    @GetMapping("/get/student")
     private List<Student> getAllStudent()
     {
         return studentService.getAllStudent();
@@ -30,7 +24,7 @@ public class StudentController
     {
         return studentService.getStudentById(id);
     }
-    //creating a delete mapping that deletes a specific student
+    //creating a delete mapping that deletes a specific student*/
     @DeleteMapping("/student/{id}")
     private String deleteStudent(@PathVariable("id") int id)
     {
@@ -44,7 +38,8 @@ public class StudentController
         studentService.saveOrUpdate(student);
         return student.getId();
     }
-    @PutMapping("/student/put")
+
+  @PutMapping("/student/put")
     private String updateStudent(){
         return "In Put Method";
     }
