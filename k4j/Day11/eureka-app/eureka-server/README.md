@@ -20,6 +20,6 @@ This project is maven project which will be run using maven command.
 $ mvn spring-boot:run
 ```
 
-### web page for eurwka
+### web page for eurwka browser
 
 http://localhost:8761/
