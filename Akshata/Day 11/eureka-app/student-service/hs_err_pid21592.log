@@ -1,0 +1,193 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 65536 bytes for Failed to commit area from 0x000001fdade40000 to 0x000001fdade50000 of length 65536.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (./open/src/hotspot/os/windows/os_windows.cpp:3287), pid=21592, tid=21960
+#
+# JRE version:  (11.0.16+11) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (11.0.16+11-LTS-199, mixed mode, sharing, tiered, compressed oops, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Dclassworlds.conf=C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5\bin\m2.conf -Dmaven.home=C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5 -Dlibrary.jansi.path=C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5\lib\jansi-native -Dmaven.multiModuleProjectDirectory=C:\Users\sfjbs\IdeaProjects\eureka-app\student-service org.codehaus.plexus.classworlds.launcher.Launcher spring-boot:run
+
+Host: Intel(R) Xeon(R) Platinum 8272CL CPU @ 2.60GHz, 2 cores, 7G,  Windows 10 , 64 bit Build 19041 (10.0.19041.1889)
+Time: Thu Oct 20 12:02:32 2022 Coordinated Universal Time elapsed time: 0.016424 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001fd96dba800):  JavaThread "Unknown thread" [_thread_in_vm, id=21960, stack(0x000000db6c200000,0x000000db6c300000)]
+
+Stack: [0x000000db6c200000,0x000000db6c300000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x62a3ea]
+V  [jvm.dll+0x76418f]
+V  [jvm.dll+0x765839]
+V  [jvm.dll+0x765ec3]
+V  [jvm.dll+0x23da98]
+V  [jvm.dll+0x62770a]
+V  [jvm.dll+0x61c475]
+V  [jvm.dll+0x2f2aac]
+V  [jvm.dll+0x2f2932]
+V  [jvm.dll+0x2f7770]
+V  [jvm.dll+0x33a1e2]
+V  [jvm.dll+0x339c00]
+V  [jvm.dll+0x2d00c8]
+V  [jvm.dll+0x2d1236]
+V  [jvm.dll+0x73e757]
+V  [jvm.dll+0x73ffef]
+V  [jvm.dll+0x346ef9]
+V  [jvm.dll+0x723f90]
+V  [jvm.dll+0x3b5adf]
+V  [jvm.dll+0x3b7bf1]
+C  [jli.dll+0x5207]
+C  [ucrtbase.dll+0x21bb2]
+C  [KERNEL32.DLL+0x17034]
+C  [ntdll.dll+0x526a1]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x000001fd94b91500, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x000001fd96dd0000 GCTaskThread "GC Thread#0" [stack: 0x000000db6c300000,0x000000db6c400000] [id=21148]
+  0x000001fd94c6e000 ConcurrentGCThread "G1 Main Marker" [stack: 0x000000db6c400000,0x000000db6c500000] [id=19036]
+  0x000001fd96dff000 ConcurrentGCThread "G1 Conc#0" [stack: 0x000000db6c500000,0x000000db6c600000] [id=20428]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffec367f357]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x000001fd96db6ff0] Heap_lock - owner thread: 0x000001fd96dba800
+
+Heap address: 0x0000000080000000, size: 2048 MB, Compressed Oops mode: Non-zero based: 0x0000000080000000
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff73cef0000 - 0x00007ff73ceff000 	C:\Program Files\Java\jdk-11.0.16\bin\java.exe
+0x00007fff474b0000 - 0x00007fff476a8000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007fff473b0000 - 0x00007fff4746d000 	C:\Windows\System32\KERNEL32.DLL
+0x00007fff44c60000 - 0x00007fff44f32000 	C:\Windows\System32\KERNELBASE.dll
+0x00007fff45130000 - 0x00007fff45230000 	C:\Windows\System32\ucrtbase.dll
+0x00007fff283f0000 - 0x00007fff28408000 	C:\Program Files\Java\jdk-11.0.16\bin\jli.dll
+0x00007fff47110000 - 0x00007fff471be000 	C:\Windows\System32\ADVAPI32.dll
+0x00007fff46e40000 - 0x00007fff46ede000 	C:\Windows\System32\msvcrt.dll
+0x00007fff46bc0000 - 0x00007fff46c5c000 	C:\Windows\System32\sechost.dll
+0x00007fff46fb0000 - 0x00007fff470d5000 	C:\Windows\System32\RPCRT4.dll
+0x00007fff45520000 - 0x00007fff456bd000 	C:\Windows\System32\USER32.dll
+0x00007fff44c30000 - 0x00007fff44c52000 	C:\Windows\System32\win32u.dll
+0x00007fff470e0000 - 0x00007fff4710b000 	C:\Windows\System32\GDI32.dll
+0x00007fff45020000 - 0x00007fff4512f000 	C:\Windows\System32\gdi32full.dll
+0x00007fff45470000 - 0x00007fff4550d000 	C:\Windows\System32\msvcp_win.dll
+0x00007fff2c310000 - 0x00007fff2c325000 	C:\Program Files\Java\jdk-11.0.16\bin\VCRUNTIME140.dll
+0x00007fff26a60000 - 0x00007fff26cfa000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\COMCTL32.dll
+0x00007fff37690000 - 0x00007fff3769a000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007fff46d10000 - 0x00007fff46d40000 	C:\Windows\System32\IMM32.DLL
+0x00007fff22fc0000 - 0x00007fff2305b000 	C:\Program Files\Java\jdk-11.0.16\bin\msvcp140.dll
+0x00007ffec33a0000 - 0x00007ffec3eb8000 	C:\Program Files\Java\jdk-11.0.16\bin\server\jvm.dll
+0x00007fff45510000 - 0x00007fff45518000 	C:\Windows\System32\PSAPI.DLL
+0x00007fff211a0000 - 0x00007fff211a9000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007fff256f0000 - 0x00007fff25717000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007fff46b50000 - 0x00007fff46bbb000 	C:\Windows\System32\WS2_32.dll
+0x00007fff42a60000 - 0x00007fff42a72000 	C:\Windows\SYSTEM32\kernel.appcore.dll
+0x00007fff283e0000 - 0x00007fff283f0000 	C:\Program Files\Java\jdk-11.0.16\bin\verify.dll
+0x00007fff32a00000 - 0x00007fff32be4000 	C:\Windows\SYSTEM32\DBGHELP.DLL
+0x00007fff367a0000 - 0x00007fff367cc000 	C:\Windows\SYSTEM32\dbgcore.DLL
+0x00007fff453e0000 - 0x00007fff45462000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007fff234c0000 - 0x00007fff234e8000 	C:\Program Files\Java\jdk-11.0.16\bin\java.dll
+0x00007fff283d0000 - 0x00007fff283da000 	C:\Program Files\Java\jdk-11.0.16\bin\jimage.dll
+0x00007fff23460000 - 0x00007fff23476000 	C:\Program Files\Java\jdk-11.0.16\bin\zip.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Java\jdk-11.0.16\bin;C:\Windows\SYSTEM32;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e;C:\Program Files\Java\jdk-11.0.16\bin\server
+
+VM Arguments:
+jvm_args: -Dclassworlds.conf=C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5\bin\m2.conf -Dmaven.home=C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5 -Dlibrary.jansi.path=C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5\lib\jansi-native -Dmaven.multiModuleProjectDirectory=C:\Users\sfjbs\IdeaProjects\eureka-app\student-service 
+java_command: org.codehaus.plexus.classworlds.launcher.Launcher spring-boot:run
+java_class_path (initial): C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5\boot\plexus-classworlds-2.6.0.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 2                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 1                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 2                                         {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 134217728                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 2147483648                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5825164                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122916538                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122916538                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+     bool UseCompressedClassPointers               = true                                 {lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                                 {lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+PATH=C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5\bin;C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5\lib;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Git\cmd;C:\Users\sfjbs\AppData\Local\Microsoft\WindowsApps;C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5\bin;C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5\lib;;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.1\bin;
+USERNAME=sfjbs
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 85 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 19041 (10.0.19041.1889)
+Hyper-V role detected
+
+CPU:total 2 (initial active 2) (1 cores per cpu, 2 threads per core) family 6 model 85 stepping 7 microcode 0xffffffff, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, rtm, 3dnowpref, lzcnt, ht, tsc, bmi1, bmi2, adx, evex, fma
+
+Memory: 4k page, system-wide physical 8190M (591M free)
+TotalPageFile size 10238M (AvailPageFile size 5M)
+current process WorkingSet (physical memory assigned to process): 9M, peak: 9M
+current process commit charge ("private bytes"): 177M, peak: 177M
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (11.0.16+11-LTS-199) for windows-amd64 JRE (11.0.16+11-LTS-199), built on Jun 28 2022 08:23:17 by "mach5one" with MS VC++ 15.9 (VS2017)
+
+END.
