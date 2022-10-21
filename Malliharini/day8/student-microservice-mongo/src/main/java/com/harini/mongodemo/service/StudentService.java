@@ -1,11 +1,11 @@
-package com.kumar.demo.service;
+package com.harini.mongodemo.service;
 
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.kumar.demo.model.Student;
-import com.kumar.demo.repository.StudentRepository;
+import com.harini.mongodemo.model.Student;
+import com.harini.mongodemo.repository.StudentRepository;
 @Service
 public class StudentService
 {

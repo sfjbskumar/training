@@ -1,10 +1,10 @@
-package com.kumar.demo.controller;
+package com.harini.mongodemo.controller;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import com.kumar.demo.model.Student;
-import com.kumar.demo.service.StudentService;
+import com.harini.mongodemo.model.Student;
+import com.harini.mongodemo.service.StudentService;
 //creating RestController
 @RestController
 public class StudentController
