@@ -1,11 +1,13 @@
-package com.kumar.demo.service;
+package com.harini.h2demo.service;
+
+import com.harini.h2demo.model.Student;
+import com.harini.h2demo.repository.StudentRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import com.kumar.demo.model.Student;
-import com.kumar.demo.repository.StudentRepository;
+
 @Service
 public class StudentService
 {
@@ -15,7 +17,9 @@ public class StudentService
     public List<Student> getAllStudent()
     {
         List<Student> students = new ArrayList<Student>();
-        studentRepository.findAll().forEach(student -> students.add(student));
+        for (Student student : studentRepository.findAll()) {
+            students.add(student);
+        }
         return students;
     }
     //getting a specific record

@@ -1,4 +1,4 @@
-package com.kumar.demo.model;
+package com.harini.h2demo.model;
 
 
 import javax.persistence.Column;

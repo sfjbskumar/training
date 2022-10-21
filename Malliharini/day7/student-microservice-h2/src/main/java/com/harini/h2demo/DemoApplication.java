@@ -1,4 +1,4 @@
-package com.kumar.demo;
+package com.harini.h2demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
