@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/day2/Calculator-Application/Calculator-Application/Calculator-Application.iml" filepath="$PROJECT_DIR$/day2/Calculator-Application/Calculator-Application/Calculator-Application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day2/Calculator-Application/Calculator-Application/Calculator-Application (1).iml" filepath="$PROJECT_DIR$/day2/Calculator-Application/Calculator-Application/Calculator-Application (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/day3/Calculator-Application/Calculator-Application/Calculator-Application (2).iml" filepath="$PROJECT_DIR$/day3/Calculator-Application/Calculator-Application/Calculator-Application (2).iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Malliharini.iml" filepath="$PROJECT_DIR$/.idea/Malliharini.iml" />
       <module fileurl="file://$PROJECT_DIR$/day2/first-spring-boot/first-spring-boot/first-spring-boot.iml" filepath="$PROJECT_DIR$/day2/first-spring-boot/first-spring-boot/first-spring-boot.iml" />
       <module fileurl="file://$PROJECT_DIR$/day1/simple-maven-app/simple-maven-app.iml" filepath="$PROJECT_DIR$/day1/simple-maven-app/simple-maven-app.iml" />

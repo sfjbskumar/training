@@ -6,7 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Calculator-Application (1)" />
         <module name="first-spring-boot" />
+        <module name="Calculator-Application (2)" />
         <module name="simple-maven-app" />
         <module name="Calculator-Application" />
       </profile>
@@ -14,6 +16,7 @@
     <bytecodeTargetLevel>
       <module name="Calculator-Application" target="11" />
       <module name="Calculator-Application (1)" target="11" />
+      <module name="Calculator-Application (2)" target="11" />
       <module name="first-spring-boot" target="11" />
       <module name="simple-maven-app" target="1.8" />
     </bytecodeTargetLevel>
@@ -22,6 +25,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Calculator-Application" options="-parameters" />
       <module name="Calculator-Application (1)" options="-parameters" />
+      <module name="Calculator-Application (2)" options="-parameters" />
       <module name="first-spring-boot" options="-parameters" />
     </option>
   </component>
