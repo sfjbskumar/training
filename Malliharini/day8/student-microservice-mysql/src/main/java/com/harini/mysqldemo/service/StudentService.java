@@ -1,11 +1,13 @@
-package com.kumar.demo.service;
+package com.harini.mysqldemo.service;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.harini.mysqldemo.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.kumar.demo.model.Student;
-import com.kumar.demo.repository.StudentRepository;
+import com.harini.mysqldemo.model.Student;
+
 @Service
 public class StudentService
 {

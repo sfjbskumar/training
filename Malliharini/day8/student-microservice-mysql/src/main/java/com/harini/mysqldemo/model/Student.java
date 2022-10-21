@@ -1,4 +1,4 @@
-package com.kumar.demo.model;
+package com.harini.mysqldemo.model;
 
 
 import javax.persistence.Column;

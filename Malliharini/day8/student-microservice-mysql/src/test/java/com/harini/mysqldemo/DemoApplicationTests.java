@@ -1,4 +1,4 @@
-package com.kumar.demo;
+package com.harini.mysqldemo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

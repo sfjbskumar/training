@@ -1,7 +1,7 @@
-package com.kumar.demo.repository;
+package com.harini.mysqldemo.repository;
 
 import org.springframework.data.repository.CrudRepository;
-import com.kumar.demo.model.Student;
+import com.harini.mysqldemo.model.Student;
 import org.springframework.stereotype.Repository;
 
 @Repository
