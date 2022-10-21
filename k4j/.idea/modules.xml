@@ -9,6 +9,8 @@
       <module fileurl="file://$PROJECT_DIR$/Day3/spring-boot-rest/spring-boot-rest.iml" filepath="$PROJECT_DIR$/Day3/spring-boot-rest/spring-boot-rest.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day3/spring-calculator/spring-calculator.iml" filepath="$PROJECT_DIR$/Day3/spring-calculator/spring-calculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day4/spring-calculator/spring-calculator (1) (com.kumar.calculator).iml" filepath="$PROJECT_DIR$/Day4/spring-calculator/spring-calculator (1) (com.kumar.calculator).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day3/spring-calculator/spring-calculator (1) (com.rama.calculator).iml" filepath="$PROJECT_DIR$/Day3/spring-calculator/spring-calculator (1) (com.rama.calculator).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day4/spring-calculator/spring-calculator (2) (com.kumar.calculator).iml" filepath="$PROJECT_DIR$/Day4/spring-calculator/spring-calculator (2) (com.kumar.calculator).iml" />
     </modules>
   </component>
 </project>
