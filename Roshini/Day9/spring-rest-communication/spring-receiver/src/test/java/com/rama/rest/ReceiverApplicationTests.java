@@ -1,10 +1,10 @@
-package com.sathya.app.firstspringboot;
+package com.rama.rest;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FirstSpringBootApplicationTests {
+class ReceiverApplicationTests {
 
 	@Test
 	void contextLoads() {
