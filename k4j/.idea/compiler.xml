@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-calculator (1) (com.rama.calculator)" />
+        <module name="spring-calculator (1) (com.kumar.calculator)" />
+        <module name="spring-calculator (2) (com.kumar.calculator)" />
+        <module name="spring-boot-app" />
         <module name="first-spring-boot" />
         <module name="simple-maven-app" />
         <module name="spring-calculator" />
-        <module name="spring-calculator (1) (com.kumar.calculator)" />
         <module name="spring-boot-rest" />
-        <module name="spring-boot-app" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,6 +23,8 @@
       <module name="spring-boot-rest" target="11" />
       <module name="spring-calculator" target="11" />
       <module name="spring-calculator (1) (com.kumar.calculator)" target="11" />
+      <module name="spring-calculator (1) (com.rama.calculator)" target="11" />
+      <module name="spring-calculator (2) (com.kumar.calculator)" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -30,6 +34,8 @@
       <module name="spring-boot-rest" options="-parameters" />
       <module name="spring-calculator" options="-parameters" />
       <module name="spring-calculator (1) (com.kumar.calculator)" options="-parameters" />
+      <module name="spring-calculator (1) (com.rama.calculator)" options="-parameters" />
+      <module name="spring-calculator (2) (com.kumar.calculator)" options="-parameters" />
     </option>
   </component>
 </project>
