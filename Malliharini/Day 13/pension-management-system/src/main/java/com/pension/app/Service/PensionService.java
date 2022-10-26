@@ -1,7 +1,7 @@
 package com.pension.app.Service;
 
-import com.pension.app.Repository.PensionRepository;
-import com.pension.app.model.Pension;
+import com.pension.app.Repository.*;
+import com.pension.app.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
