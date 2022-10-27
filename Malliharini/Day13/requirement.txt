@@ -27,3 +27,64 @@ Admin approval will fail if Employment status is A
 Applicant can check status -->/checkSatus/{id}--> id  EmpStatus PenStatus
 Applicant can check balance -->/checkBalance/{id}--> id  Bala Installment pensinmonth
 Applicant can Application Infor-->/checkApplication/{id}--> PensionJSON full information
+
+
+admin
+
+
+
+
+
+@Test findAllTest()
+ { 
+Pension p = new Pension();
+ p.set p.set List<Pension> pensionList = new ArrayList<Pension>();
+ pensionList.add(p);
+ mockito.when(pensionRepo.findAll()).thenReturn(pensionList) 
+AssertEquals(pensionList,pensionRepo.findAll()); 
+}
+from Kumar to Everyone14:58
+@Mock private PersonRepo personRepo;
+
+
+@Test
+    public void saveCustomerTest() {
+        Customer mockCustomer = mock(Customer.class);
+        Customer expectedCustomer = new Customer("customer1", "1", "test address");
+        when(customerRepository.save(any(Customer.class))).thenReturn(expectedCustomer);
+        Customer result = createController.saveCustomer(mockCustomer);
+        Assert.assertEquals(result.getAddress(), expectedCustomer.getAddress());
+        Assert.assertEquals(result.getName(), expectedCustomer.getName());
+	Assert.assertEquals(result.getCustId(), expectedCustomer.getCustId());
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
