@@ -17,7 +17,7 @@ public class Pension {
     @Column
     private String applicant_name;
     @Column
-    private String age;
+    private int age;
     @Column
     private int balance_amount;
     @Column
@@ -47,11 +47,11 @@ public class Pension {
         this.applicant_name = applicant_name;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
