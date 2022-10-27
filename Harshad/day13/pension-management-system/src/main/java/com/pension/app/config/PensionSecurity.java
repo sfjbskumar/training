@@ -17,6 +17,7 @@ public class PensionSecurity extends WebSecurityConfigurerAdapter {
                 .antMatchers(HttpMethod.GET, "/pensions").hasAnyRole("ADMIN")
                 .antMatchers(HttpMethod.GET, "/getPensions").hasAnyRole("ADMIN")
                 .antMatchers(HttpMethod.GET, "/pension/{id}").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/issuePensions").hasAnyRole("ADMIN")
                 .antMatchers(HttpMethod.PUT, "/issuePension/{id}").hasAnyRole("ADMIN")
                 .antMatchers(HttpMethod.PUT, "/loadBalance/{id}").hasAnyRole("ADMIN")
                 .antMatchers(HttpMethod.PUT, "/approve/{id}").hasAnyRole("ADMIN")

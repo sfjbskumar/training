@@ -12,6 +12,7 @@ public class PensionService
 {
     @Autowired
     PensionRepository pensionRepository;
+    Pension pension1;
     //getting all student records
     public List<Pension> getAllPension()
     {
@@ -32,6 +33,20 @@ public class PensionService
     public void delete(int id)
     {
         pensionRepository.deleteById(id);
+    }
+
+    public List<Pension> getPensionByEmpPenStatus(String empstatus, String penstatus){
+        List<Pension> pensions = new ArrayList<Pension>();
+        List<Pension> getPens = new ArrayList<Pension>();
+        String es = pension1.getEmpstatus();
+        String ps = pension1.getPenstatus();
+        pensionRepository.findAll().forEach(pension -> pensions.add(pension));
+        for(int i=0;i<pensions.size();i++){
+            if(pensions.get(i).getEmpstatus().equals(es) && pensions.get(i).getEmpstatus().equals(ps)){
+                getPens.add(pensions.get(i));
+            }
+        }
+        return getPens;
     }
 }
 
