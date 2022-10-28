@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="abe4763d-d4a7-469c-abb0-7b255a85437b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Day10/spring-rest-communication/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day10/spring-rest-communication/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day10/spring-rest-communication/spring-caller/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day10/spring-rest-communication/spring-caller/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day10/spring-rest-communication/spring-caller/spring-caller.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day10/spring-rest-communication/spring-caller/src/main/java/com/rama/rest/CallerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day10/spring-rest-communication/spring-caller/src/main/java/com/rama/rest/config/CallerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day10/spring-rest-communication/spring-caller/src/main/java/com/rama/rest/controller/CallerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day10/spring-rest-communication/spring-caller/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day10/spring-rest-communication/spring-caller/src/test/java/com/rama/rest/CallerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day10/spring-rest-communication/student-microservice-mysql/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day10/spring-rest-communication/student-microservice-mysql/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day10/spring-rest-communication/student-microservice-mysql/docker-compose-mysql.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day10/spring-rest-communication/student-microservice-mysql/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day10/spring-rest-communication/student-microservice-mysql/src/main/java/com/student/app/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day10/spring-rest-communication/student-microservice-mysql/src/main/java/com/student/app/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day10/spring-rest-communication/student-microservice-mysql/src/main/java/com/student/app/StudentMicroserviceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day10/spring-rest-communication/student-microservice-mysql/src/main/java/com/student/app/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day10/spring-rest-communication/student-microservice-mysql/src/main/java/com/student/app/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day10/spring-rest-communication/student-microservice-mysql/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day10/spring-rest-communication/student-microservice-mysql/src/test/java/com/student/app/StudentMicroserviceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Day10/spring-rest-communication/student-microservice-mysql/src/test/resources/application-test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignmentday11" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/eureka-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/eureka-server/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/eureka-server/hs_err_pid177340.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/eureka-server/hs_err_pid177500.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/eureka-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/eureka-server/replay_pid177500.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/eureka-server/src/main/java/com/eureka/app/EurekaAppApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/eureka-server/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/eureka.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/gateway-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/gateway-service/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/gateway-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/gateway-service/src/main/java/com/eureka/app/gateway/GatwayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/gateway-service/src/main/java/com/eureka/app/gateway/config/GatewayConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/gateway-service/src/main/java/com/eureka/app/gateway/controller/ServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/gateway-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/gateway-service/src/test/java/com/eureka/app/gateway/GatewayApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/gatway-service/gateway-service.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/gatway-service/hs_err_pid175824.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/gatway-service/replay_pid175824.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/school-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/school-service/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/school-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/school-service/src/main/java/com/eureka/app/school/SchoolApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/school-service/src/main/java/com/eureka/app/school/config/SchoolServiceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/school-service/src/main/java/com/eureka/app/school/controller/SchoolServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/school-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/school-service/src/test/java/com/eureka/app/school/SchoolServiceControllerTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/school-service/src/test/java/com/eureka/app/school/SpringTestConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/school-service/src/test/resources/application-test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/student-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/student-service/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/student-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/student-service/src/main/java/com/eureka/app/student/StudentServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/student-service/src/main/java/com/eureka/app/student/controller/StudentServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/student-service/src/main/java/com/eureka/app/student/dto/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/student-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-app/student-service/src/test/java/com/eureka/app/student/StudentServiceApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GZBJXmnGZSgt3QZYTTpDDM9VZj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="abe4763d-d4a7-469c-abb0-7b255a85437b" name="Changes" comment="" />
+      <created>1666586154051</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666586154051</updated>
+    </task>
+    <servers />
+  </component>
+</project>
