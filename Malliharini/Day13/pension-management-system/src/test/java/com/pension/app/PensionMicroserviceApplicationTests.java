@@ -1,8 +1,5 @@
-package com.pension.app;
-
-//import com.pension.app.Repository.PensionRepository;
-import com.pension.app.Service.PensionService;
-import com.pension.app.model.Pension;
+/*
+//import com.pension.app.model.Pension;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SpringBootTest
-@RunWith(MockitoJUnitRunner.class)
+/*@RunWith(MockitoJUnitRunner.class)
 class PensionMicroserviceApplicationTests {
 	@InjectMocks
 	//Pension p = new Pension();
@@ -34,13 +31,16 @@ class PensionMicroserviceApplicationTests {
 		when(PensionService.applicant_info()).thenReturn(pension_applicant);
 		assertEquals(pension_applicant, PensionService.applicant_info());
 	}
+*/
 
+/*
+package com.pension.app;
+import com.pension.app.Repository.PensionRepository;
+import com.pension.app.Service.PensionService;
+import org.junit.Test;
 
-
-
-
-	@Test
+@Test
 	 void contextLoads() {
 	}
 
-}
+}*/

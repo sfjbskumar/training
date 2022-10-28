@@ -15,10 +15,10 @@ public class PensionController {
    PensionRepository pensionRepository;
 
     @PostMapping("/createApplicant")
-    private int savePensionApplicant(@RequestBody Pension applicant)
+    private int savePensionApplicant(@RequestBody Pension pension)
     {
-        pensionService.saveOrUpdate(applicant);
-        return applicant.getApplicant_id();
+        pensionService.saveOrUpdate(pension);
+        return pension.getApplicant_id();
     }
     @GetMapping("/pensions")
     private List<Pension> applicant_info()
