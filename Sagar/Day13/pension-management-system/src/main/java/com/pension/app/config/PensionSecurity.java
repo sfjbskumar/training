@@ -1,5 +1,4 @@
-package com.student.app.config;
-
+package com.pension.app.config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -8,15 +7,20 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
 @Configuration
-class StudentSecurity extends WebSecurityConfigurerAdapter {
+class PensionSecurity extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.httpBasic().and().authorizeRequests()
-                .antMatchers(HttpMethod.POST, "/save/student").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.PUT, "/update/student").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.GET, "/get/student").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.GET, "/get/all").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.GET, "/remove/student").hasAnyRole("ADMIN").and().csrf().disable().headers()
+                .antMatchers(HttpMethod.POST, "/add").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.PUT, "/all/employee").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/employee/{id}").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/update").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/penStatus/{id}").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/empStatus/{id}").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/add/penAmt").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/getBalance/{id}").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/issue/pension/{id}").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/approve/{id}").hasAnyRole("ADMIN").and().csrf().disable().headers()
                 .frameOptions().disable();
     }
 
