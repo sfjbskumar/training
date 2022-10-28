@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.pension.app.PensionService;
 import com.pension.app.Pension;
 import com.pension.app.PensionRepository;
+
+import java.util.ArrayList;
 import java.util.List;
 //import java.util.HashMap;
 //import java.util.Map;
@@ -24,10 +26,13 @@ public class PensionController {
     }
 
     @GetMapping("/getPension")
-    private void getAllPensions()
+    private List<Pension> getAllPensions()
     {
-         pensionRepository.deactivateUsersNotLoggedInSince();
-       // getall.forEach(i->{System.out.println(i);});
+//         pensionRepository.updatePensionStatus("jish carter","R", "Y");
+//        pensionRepository.updatePensionStatus();
+//        return "pensions updated";
+        List<Pension> getPens = pensionRepository.getPensions();
+        return getPens;
     }
 
     @PostMapping("/createApplicant")
@@ -147,4 +152,88 @@ public class PensionController {
         pensionService.delete(id);
     }
 
+    @GetMapping("/issuePensions")
+    private String putPensions(){
+        int f=0;
+        List<Pension> list = new ArrayList<>();
+        list=pensionService.getAllPension();
+
+        for(int i=0;i<list.size();i++) {
+            Pension pension1 = list.get(i);
+            String es = pension1.getEmpstatus();
+            String ps = pension1.getPenstatus();
+
+            if (es.equals("R") && ps.equals("Y")) {
+                int bal = pension1.getBalance();
+                int inst = pension1.getInstallment();
+                bal = bal - inst;
+                pension1.setBalance(bal);
+                pensionService.saveOrUpdate(pension1);
+               f++;
+            }
+
+        }
+        if(f>0){
+            return "Pension Updated !";
+        }
+        else{
+            return "Pensions are not Updated !";
+        }
+
+
+    }
+
+    @GetMapping("/loadBalance")
+    private String loadPensions(){
+        int f=0;
+        List<Pension> list = new ArrayList<>();
+        list=pensionService.getAllPension();
+
+        for(int i=0;i<list.size();i++) {
+            Pension pension1 = list.get(i);
+            String es = pension1.getEmpstatus();
+            String ps = pension1.getPenstatus();
+            if (es.equals("W") && ps.equals("N")) {
+                int bal = pension1.getBalance();
+                int inst = pension1.getInstallment();
+                bal = bal + inst;
+                pension1.setBalance(bal);
+                pensionService.saveOrUpdate(pension1);
+                f++;
+            }
+
+        }
+        if(f>0){
+            return "Balance credited !";
+        }
+        else{
+            return "Balance not credited !";
+        }
+    }
+
+//    @GetMapping("/iPension")
+//    private String iPensions(){
+//        int f=0;
+//        List<Pension> list = new ArrayList<>();
+//        list=pensionService.getPensionByEmpPenStatus("R","Y");
+//
+//        for(int i=0;i<list.size();i++) {
+//            Pension pension1 = list.get(i);
+//            if (list.size()>0) {
+//                int bal = pension1.getBalance();
+//                int inst = pension1.getInstallment();
+//                bal = bal + inst;
+//                pension1.setBalance(bal);
+//                pensionService.saveOrUpdate(pension1);
+//                f++;
+//            }
+//
+//        }
+//        if(f>0){
+//            return "Balance credited !";
+//        }
+//        else{
+//            return "Balance not credited !";
+//        }
+//    }
 }
