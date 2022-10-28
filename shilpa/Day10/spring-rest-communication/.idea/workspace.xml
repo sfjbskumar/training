@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1f682619-8701-461c-be76-24f207802c7c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-caller/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-caller/target/classes/com/rama/rest/CallerApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-caller/target/classes/com/rama/rest/config/CallerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-caller/target/classes/com/rama/rest/controller/CallerController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-caller/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-caller/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-caller/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-caller/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-caller/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-caller/target/spring-caller-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-caller/target/test-classes/com/rama/rest/CallerApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/eureka-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/eureka-server/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/eureka-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/eureka-server/src/main/java/com/eureka/app/EurekaAppApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/eureka-server/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/eureka.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/gatway-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/gatway-service/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/gatway-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/gatway-service/src/main/java/com/eureka/app/gateway/GatwayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/gatway-service/src/main/java/com/eureka/app/gateway/config/GatewayConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/gatway-service/src/main/java/com/eureka/app/gateway/controller/ServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/gatway-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/gatway-service/src/test/java/com/eureka/app/gateway/GatewayApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/school-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/school-service/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/school-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/school-service/src/main/java/com/eureka/app/school/SchoolApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/school-service/src/main/java/com/eureka/app/school/config/SchoolServiceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/school-service/src/main/java/com/eureka/app/school/controller/SchoolServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/school-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/school-service/src/test/java/com/eureka/app/school/SchoolServiceControllerTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/school-service/src/test/java/com/eureka/app/school/SpringTestConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/school-service/src/test/resources/application-test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/student-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/student-service/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/student-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/student-service/src/main/java/com/eureka/app/student/StudentServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/student-service/src/main/java/com/eureka/app/student/controller/StudentServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/student-service/src/main/java/com/eureka/app/student/dto/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/student-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day11/eureka-app/student-service/src/test/java/com/eureka/app/student/StudentServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../k4j/Day7/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../k4j/Day7/demo/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day7/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day7/demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day7/demo/src/main/java/com/kumar/demo/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day7/demo/src/main/java/com/kumar/demo/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day7/demo/src/main/java/com/kumar/demo/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day7/demo/src/main/java/com/kumar/demo/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day7/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day7/demo/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day8/Assignment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day8/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day8/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day8/spring-rest-communication/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day8/spring-rest-communication/spring-caller/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day8/spring-rest-communication/spring-caller/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day8/spring-rest-communication/spring-caller/src/main/java/com/rama/rest/CallerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day8/spring-rest-communication/spring-caller/src/main/java/com/rama/rest/config/CallerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day8/spring-rest-communication/spring-caller/src/main/java/com/rama/rest/controller/CallerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day8/spring-rest-communication/spring-caller/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day8/spring-rest-communication/spring-caller/src/test/java/com/rama/rest/CallerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day8/spring-rest-communication/spring-receiver/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day8/spring-rest-communication/spring-receiver/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day8/spring-rest-communication/spring-receiver/src/main/java/com/rama/rest/ReceiverApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day8/spring-rest-communication/spring-receiver/src/main/java/com/rama/rest/reciever/ReceiverController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day8/spring-rest-communication/spring-receiver/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day8/spring-rest-communication/spring-receiver/src/test/java/com/rama/rest/ReceiverApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2GOQt8mBBPIBObUbN7BY6KhWfCl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f682619-8701-461c-be76-24f207802c7c" name="Changes" comment="" />
+      <created>1666257363928</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666257363928</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
