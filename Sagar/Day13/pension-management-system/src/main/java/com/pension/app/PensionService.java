@@ -1,13 +1,10 @@
-package com.pension.app.service;
+package com.pension.app;
+import com.pension.app.PensionRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import com.pension.app.model.Pension;
-
-import com.pension.app.repo.PensionRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 @Service
 public class PensionService
 {
@@ -30,8 +27,10 @@ public class PensionService
         pensionRepository.save(pension);
     }
 
-   // public Pension getBalance(int id) {
-     //   return pensionRepository.findById(id).get();
-    //}
+    public void deleteEmp(int id)
+    {
+
+        pensionRepository.deleteById(id);
+    }
 
 }

@@ -37,6 +37,3 @@ curl --location --request PUT 'localhost:8081/update/student?name=stud1&std=5th'
 Remove Data:
 
 curl --location --request DELETE 'localhost:8081/remove/student?name=stud1'
-
-
-docker-compose -f docker-compose-artemis.yml up -d

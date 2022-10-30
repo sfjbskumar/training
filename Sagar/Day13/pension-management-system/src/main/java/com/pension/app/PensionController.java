@@ -1,26 +1,20 @@
-package com.pension.app.controller;
+package com.pension.app;
 
-import com.pension.app.model.Pension;
-import com.pension.app.repo.PensionRepository;
-import com.pension.app.service.PensionService;
-import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.parameters.P;
-import org.springframework.lang.NonNull;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Map;
 
 @RestController
+@Component
 public class PensionController {
     @Autowired
     PensionService pension;
-   // Pension pen;
-    //PensionRepository repository;
+
 
     @PostMapping("/add")
-    private @NotNull String createProfile(@RequestBody Pension pension1)
+    private String createProfile(@RequestBody Pension pension1)
     {
         pension.saveEmp(pension1);
         return pension1.getId()+"Saved Successfully";
@@ -36,7 +30,7 @@ public class PensionController {
         return pension.getById(id);
     }
     @PostMapping("/update")
-    private @NotNull String updateEmp(@RequestBody Pension pension1)
+    private String updateEmp(@RequestBody Pension pension1)
     {
         pension.saveEmp(pension1);
         return pension1.getId()+"Updated";
@@ -56,8 +50,8 @@ public class PensionController {
         return pension1.getEmpStatus();
     }
 
-    @GetMapping("/add/penAmt")
-    private @NotNull String addMoneyInPensionAcc(@PathVariable("id") int id)
+    @PutMapping("/add/penAmt")
+    private String addMoneyInPensionAcc(@PathVariable("id") int id)
     {
         Pension pension1 = pension.getById(id);
         if(pension1.getEmpStatus().equals("A") && pension1.getPenStatus().equals("Y") )
@@ -74,14 +68,14 @@ public class PensionController {
     }
 
     @GetMapping("/getBalance/{id}")
-    private @NotNull String getBalance(@PathVariable("id") int id)
+    private String getBalance(@PathVariable("id") int id)
     {
         Pension pension1 = pension.getById(id);
         return "Balance Amount is:"+pension1.getBal();
     }
 
-    @PostMapping("/approve/{id}")
-    private @NotNull String approveEmp(@PathVariable("id") int id)
+    @PutMapping("/approve/{id}")
+    private String approveEmp(@PathVariable("id") int id)
     {
         Pension pension1 = pension.getById(id);
         if(pension1.getEmpStatus().equals("R"))
@@ -96,7 +90,7 @@ public class PensionController {
     }
 
     @PostMapping("/issue/pension/{id}")
-    private @NotNull String issuePension(@PathVariable("id") int id)
+    private String issuePension(@PathVariable("id") int id)
     {
         Pension pension1 = pension.getById(id);
         if(pension1.getEmpStatus().equals("R") && pension1.getPenStatus().equals("Y") )
@@ -114,7 +108,7 @@ public class PensionController {
     }
 
     @GetMapping("/lastPension")
-    private @NotNull String lastPension(@PathVariable("id") int id)
+    private String lastPension(@PathVariable("id") int id)
     {
         Pension pension1 = pension.getById(id);
         if(pension1.getEmpStatus().equals("R") && pension1.getPenStatus().equals("Y") )
@@ -125,6 +119,10 @@ public class PensionController {
             return "No pension issued";
         }
     }
-
+    @DeleteMapping("/delete/pension/{id}")
+    public void deletePension(@PathVariable("id") int id)
+    {
+        pension.deleteEmp(id);
+    }
 
 }

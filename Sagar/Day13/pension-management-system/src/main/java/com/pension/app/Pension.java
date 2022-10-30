@@ -1,8 +1,10 @@
-package com.pension.app.model;
+package com.pension.app;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+
 @Entity
 @Table
 public class Pension {
@@ -13,7 +15,7 @@ public class Pension {
     @Column
         private String name;
     @Column
-        private String age;
+        private int age;
     @Column
         private int bal;
     @Column
@@ -28,7 +30,7 @@ public class Pension {
         private int installment;
 
 
-    public Pension(int id, String name, String age, int bal, int contact, String empStatus, String penStatus, String lastPension, int installment) {
+    public Pension(int id, String name, int age, int bal, int contact, String empStatus, String penStatus, String lastPension, int installment) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -39,6 +41,11 @@ public class Pension {
         this.lastPension = lastPension;
         this.installment = installment;
     }
+
+    public Pension() {
+
+    }
+
 
     public int getId() {
         return id;
@@ -56,11 +63,11 @@ public class Pension {
         this.name = name;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
