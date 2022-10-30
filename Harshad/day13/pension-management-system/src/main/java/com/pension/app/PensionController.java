@@ -2,16 +2,8 @@ package com.pension.app;
 
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.beans.factory.annotation.Query;
-
-import com.pension.app.PensionService;
-import com.pension.app.Pension;
-import com.pension.app.PensionRepository;
-
-import java.util.ArrayList;
 import java.util.List;
-//import java.util.HashMap;
-//import java.util.Map;
+
 
 @RestController
 public class PensionController {
@@ -19,44 +11,42 @@ public class PensionController {
     PensionService pensionService;
     PensionRepository pensionRepository;
 
+    private static final String EMPSTAT = "\nEmployee Status :";
+
     @GetMapping("/pensions")
-    private List<Pension> getAllPension()
+    public List<Pension> getAllPension()
     {
         return pensionService.getAllPension();
     }
 
     @GetMapping("/getPension")
-    private List<Pension> getAllPensions()
+    public List<Pension> getAllPensions()
     {
-//         pensionRepository.updatePensionStatus("jish carter","R", "Y");
-//        pensionRepository.updatePensionStatus();
-//        return "pensions updated";
-        List<Pension> getPens = pensionRepository.getPensions();
-        return getPens;
+        return pensionRepository.getPensions();
     }
 
     @PostMapping("/createApplicant")
-    private int savePension(@RequestBody Pension pension)
+    public int savePension(@RequestBody Pension pension)
     {
         pensionService.saveOrUpdate(pension);
         return pension.getId();
     }
 
     @PostMapping("/editApplicant")
-    private int editPension(@RequestBody Pension pension)
+    public int editPension(@RequestBody Pension pension1)
     {
-        pensionService.saveOrUpdate(pension);
-        return pension.getId();
+        pensionService.saveOrUpdate(pension1);
+        return pension1.getId();
     }
 
     @GetMapping("/pension/{id}")
-    private Pension getPension(@PathVariable("id") int id)
+    public Pension getPension(@PathVariable("id") int id)
     {
         return pensionService.getPensionById(id);
     }
 
     @GetMapping("/checkStatus/{id}")
-    private String getPensionStatus(@PathVariable("id") int id)
+    public String getPensionStatus(@PathVariable("id") int id)
     {
         Pension pension1 = pensionService.getPensionById(id);
         int pid= pension1.getId();
@@ -64,12 +54,12 @@ public class PensionController {
         String estat = pension1.getEmpstatus();
         String pstat = pension1.getPenstatus();
 
-        String str = "Id = "+ptr + "\nEmployee Status = "+estat+"\nPension Status = "+pstat;
-        return str;
+        return "Id = "+ptr+EMPSTAT+estat+"\nPension Status = "+pstat;
+
     }
 
     @GetMapping("/checkBalance/{id}")
-    private String getPensionBalance(@PathVariable("id") int id)
+    public String getPensionBalance(@PathVariable("id") int id)
     {
         Pension pension1 = pensionService.getPensionById(id);
         int pid= pension1.getId();
@@ -79,11 +69,11 @@ public class PensionController {
         int inst = pension1.getInstallment();
         String itr = Integer.toString(inst);
         String pmy = pension1.getPenmmyy();
-        String str = "Id = "+ptr + "\nBalance = "+btr+"\nInstallment = "+itr+"\nPension Month = "+pmy;
-        return str;
+        return "Id = "+ptr + "\nBalance = "+btr+"\nInstallment = "+itr+"\nPension Month = "+pmy;
+
     }
     @PutMapping("/issuePension/{id}")
-    private String putPension(@PathVariable("id") int id){
+    public String putPension(@PathVariable("id") int id){
         Pension pension1 = pensionService.getPensionById(id);
         String es = pension1.getEmpstatus();
         String ps = pension1.getPenstatus();
@@ -94,17 +84,16 @@ public class PensionController {
             bal = bal - inst;
             pension1.setBalance(bal);
             pensionService.saveOrUpdate(pension1);
-            String str = "Pension issued to " + name + "\nAvalaible Balance : " + bal;
-            return str;
+            return  "Pension issued to " + name + "\nAvalaible Balance : " + bal;
+
         }
         else{
-            String str = "Pension cannot be issued to "+name+"\nEmployee Status :"+es+"\nPension Status :"+ps;
-            return str;
+            return "Pension cannot be issued to "+name+EMPSTAT+es+"\nPension Status :"+ps;
         }
     }
 
     @PutMapping("/loadBalance/{id}")
-    private String putBalance(@PathVariable("id") int id){
+    public String putBalance(@PathVariable("id") int id){
         Pension pension1 = pensionService.getPensionById(id);
         String es = pension1.getEmpstatus();
         String ps = pension1.getPenstatus();
@@ -115,48 +104,48 @@ public class PensionController {
             bal = bal + inst;
             pension1.setBalance(bal);
             pensionService.saveOrUpdate(pension1);
-            String str = "Balance credited to " + name + "\nAvailable Balance : " + bal;
-            return str;
+            return "Balance credited to " + name + "\nAvailable Balance : " + bal;
+
         }
         else{
-            String str = "Balance cannot be credited to "+name+"\nEmployee Status :"+es+"\nPension Status :"+ps;
-            return str;
+            return "Balance cannot be credited to "+name+EMPSTAT+es+"\nPension Status :"+ps;
+
         }
     }
 
     @PutMapping("/approve/{id}")
-    private String getApprove(@PathVariable("id") int id){
+    public String getApprove(@PathVariable("id") int id){
         Pension pension1 = pensionService.getPensionById(id);
         String es = pension1.getEmpstatus();
         if(es.equals("R")) {
             pension1.setPenstatus("Y");
             pensionService.saveOrUpdate(pension1);
-            String str = "Pension Approved !";
-            return str;
+            return  "Pension Approved !";
+
         }
         else{
-            String str = "Pension cannot be approved."+"\nEmployee Status :"+es;
-            return str;
+            return "Pension cannot be approved."+EMPSTAT+es;
+
         }
     }
 
     @GetMapping("/checkApplication/{id}")
-    private Pension getPensionApp(@PathVariable("id") int id)
+    public Pension getPensionApp(@PathVariable("id") int id)
     {
         return pensionService.getPensionById(id);
     }
 
     @DeleteMapping("/pension/{id}")
-    private void deletePension(@PathVariable("id") int id)
+    public void deletePension(@PathVariable("id") int id)
     {
         pensionService.delete(id);
     }
 
     @GetMapping("/issuePensions")
-    private String putPensions(){
+    public String putPensions(){
         int f=0;
-        List<Pension> list = new ArrayList<>();
-        list=pensionService.getAllPension();
+        List<Pension> list = pensionService.getAllPension();
+
 
         for(int i=0;i<list.size();i++) {
             Pension pension1 = list.get(i);
@@ -184,10 +173,9 @@ public class PensionController {
     }
 
     @GetMapping("/loadBalance")
-    private String loadPensions(){
+    public String loadPensions(){
         int f=0;
-        List<Pension> list = new ArrayList<>();
-        list=pensionService.getAllPension();
+        List<Pension> list = pensionService.getAllPension();
 
         for(int i=0;i<list.size();i++) {
             Pension pension1 = list.get(i);
@@ -211,29 +199,4 @@ public class PensionController {
         }
     }
 
-//    @GetMapping("/iPension")
-//    private String iPensions(){
-//        int f=0;
-//        List<Pension> list = new ArrayList<>();
-//        list=pensionService.getPensionByEmpPenStatus("R","Y");
-//
-//        for(int i=0;i<list.size();i++) {
-//            Pension pension1 = list.get(i);
-//            if (list.size()>0) {
-//                int bal = pension1.getBalance();
-//                int inst = pension1.getInstallment();
-//                bal = bal + inst;
-//                pension1.setBalance(bal);
-//                pensionService.saveOrUpdate(pension1);
-//                f++;
-//            }
-//
-//        }
-//        if(f>0){
-//            return "Balance credited !";
-//        }
-//        else{
-//            return "Balance not credited !";
-//        }
-//    }
 }
