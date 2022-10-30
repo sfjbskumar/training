@@ -1,0 +1,3 @@
+com\rama\rabbitmq\config\RabbitMQConfigTest.class
+com\rama\rabbitmq\service\RabbitMQSenderTest.class
+com\rama\rabbitmq\controller\WebControllerTest.class

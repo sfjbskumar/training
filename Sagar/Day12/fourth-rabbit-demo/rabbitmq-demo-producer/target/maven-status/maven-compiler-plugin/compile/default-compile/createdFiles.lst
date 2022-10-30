@@ -1,0 +1,5 @@
+com\rama\rabbitmq\config\RabbitMQConfig.class
+com\rama\rabbitmq\ProducerApplication.class
+com\rama\rabbitmq\model\Employee.class
+com\rama\rabbitmq\controller\WebController.class
+com\rama\rabbitmq\service\RabbitMQSender.class
