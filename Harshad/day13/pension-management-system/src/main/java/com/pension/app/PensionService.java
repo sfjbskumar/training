@@ -4,18 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.pension.app.Pension;
-import com.pension.app.PensionRepository;
+
 
 @Service
 public class PensionService
 {
     @Autowired
     PensionRepository pensionRepository;
-    //getting all student records
+    Pension pension1;
+    //getting all Pension records
     public List<Pension> getAllPension()
     {
-        List<Pension> pensions = new ArrayList<Pension>();
+        List<Pension> pensions = new ArrayList<>();
         pensionRepository.findAll().forEach(pension -> pensions.add(pension));
         return pensions;
     }
@@ -24,6 +24,8 @@ public class PensionService
     {
         return pensionRepository.findById(id).get();
     }
+
+    //adding a record
     public void saveOrUpdate(Pension pension)
     {
         pensionRepository.save(pension);
@@ -33,5 +35,6 @@ public class PensionService
     {
         pensionRepository.deleteById(id);
     }
+
 }
 

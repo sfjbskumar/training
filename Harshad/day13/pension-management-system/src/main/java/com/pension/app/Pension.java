@@ -1,6 +1,5 @@
 package com.pension.app;
 
-//import org.springframework.stereotype.Component;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -10,8 +9,21 @@ import javax.persistence.Table;
 @Table
 //@Component
 public class Pension {
+    public Pension(int id, int age, String name, int balance, int phone, String empstatus, String penstatus, String penmmyy, int installment) {
+        this.id = id;
+        this.age = age;
+        this.name = name;
+        this.balance = balance;
+        this.phone = phone;
+        this.empstatus = empstatus;
+        this.penstatus = penstatus;
+        this.penmmyy = penmmyy;
+        this.installment = installment;
+    }
+    public Pension(){}
 
-@Id
+
+    @Id
 
 @Column
     private int id;
