@@ -4,7 +4,8 @@
     <persistence-units>
       <persistence-unit name="Default">
         <packages>
-          <package value="com.pension.app" />
+          <package value="" />
+          <package value="com.pension.app.config" />
         </packages>
       </persistence-unit>
     </persistence-units>

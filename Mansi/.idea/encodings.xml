@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Day 13/pension-management-system/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day 13/pension-management-system/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day10/spring-rest-communication/mysql-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day10/spring-rest-communication/mysql-demo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day10/spring-rest-communication/spring-caller/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day10/spring-rest-communication/spring-caller/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day10/spring-rest-communication/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day10/spring-rest-communication/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day11/eureka-app/eureka-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day11/eureka-app/gatway-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day11/eureka-app/gatway-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day11/eureka-app/school-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day11/eureka-app/school-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day11/eureka-app/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day11/eureka-app/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day11/eureka-app/student-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day11/eureka-app/student-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day12/fourth-artemis-demo/artemis-demo-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day12/fourth-artemis-demo/artemis-demo-consumer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day12/fourth-artemis-demo/artemis-demo-producer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day12/fourth-artemis-demo/artemis-demo-producer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day12/fourth-artemis-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day12/fourth-artemis-demo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day12/fourth-rabbit-demo/rabbitmq-demo-consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day12/fourth-rabbit-demo/rabbitmq-demo-consumer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day12/fourth-rabbit-demo/rabbitmq-demo-producer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day12/fourth-rabbit-demo/rabbitmq-demo-producer/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day12/fourth-rabbit-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day12/fourth-rabbit-demo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day2/first-spring-boot/first-spring-boot/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day2/first-spring-boot/first-spring-boot/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day3/spring-boot-rest/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day3/spring-boot-rest/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day3/spring-calculator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day3/spring-calculator/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day4/spring-boot-app/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day4/spring-boot-app/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day4/spring-calculator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day4/spring-calculator/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day6/student-microservice-security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day6/student-microservice-security/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day6/student-microservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day6/student-microservice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day7/demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day7/demo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day7/spring-calculator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day7/spring-calculator/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day7/student-microservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day7/student-microservice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day9/demo_mongo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day9/demo_mongo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day9/mysql-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day9/mysql-demo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day9/spring-rest-communication/spring-caller/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day9/spring-rest-communication/spring-caller/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day9/spring-rest-communication/spring-receiver/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day9/spring-rest-communication/spring-receiver/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day9/spring-rest-communication/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Day9/spring-rest-communication/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
