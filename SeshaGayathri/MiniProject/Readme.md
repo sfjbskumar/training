@@ -28,18 +28,18 @@ curl --location --request POST 'localhost:8081/save/student' \
 "balance":5000 ,
 "phone":978566643 ,
 "empstatus":"W" ,
-"penstatus":"A" ,
-"penmmyy":"0722" ,
+"penstatus":"Y" ,
+"penmmyy":"07/22" ,
 "installment":1000
 }'
 
 Get data:
-curl --location --request GET 'localhost:8081/get/student?name=stud1'
+curl --location --request GET 'localhost:8088/pensions'
 
 Update data:
 
-curl --location --request PUT 'localhost:8081/update/student?name=stud1&std=5th'
+curl --location --request PUT 'localhost:8088/issue_Pension'
 
 Remove Data:
 
-curl --location --request DELETE 'localhost:8081/remove/student?name=stud1'
+curl --location --request DELETE 'localhost:8088/deletePension?id=1'

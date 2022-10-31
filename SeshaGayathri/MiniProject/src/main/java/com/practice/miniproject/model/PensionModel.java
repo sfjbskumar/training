@@ -4,7 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 @Entity
-@Table
+@Table(name="pension")
 public class PensionModel {
     @Id
 
@@ -36,10 +36,9 @@ public class PensionModel {
     @Column
     private int installment;
 
-  public PensionModel( int id,String name, int age, int balance,String phone,  String empstatus, String penstatus, String penmmyy, int installment) {
+  public PensionModel(  int age, int balance,String phone,  String empstatus, String penstatus, String penmmyy, int installment) {
 
-        this.id=id;
-        this.name=name;
+
         this.age=age;
         this.balance=balance;
         this.phone=phone;
