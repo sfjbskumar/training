@@ -10,4 +10,7 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 public interface PensionRepository extends CrudRepository<Pension, Integer>
 {
+    @Modifying
+    @Query("update Pension u set u.employee_status= 'R' " )
+    void deactivateUsersNotLoggedInSince();
 }
