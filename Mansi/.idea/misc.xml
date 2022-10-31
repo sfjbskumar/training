@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Day1/App/pom.xml" />
+        <option value="$PROJECT_DIR$/Day2/first-spring-boot/first-spring-boot/pom.xml" />
+        <option value="$PROJECT_DIR$/Day3/spring-boot-rest/pom.xml" />
+        <option value="$PROJECT_DIR$/Day3/spring-calculator/pom.xml" />
+        <option value="$PROJECT_DIR$/Day4/spring-boot-app/pom.xml" />
+        <option value="$PROJECT_DIR$/Day4/spring-calculator/pom.xml" />
+        <option value="$PROJECT_DIR$/Day6/student-microservice/pom.xml" />
+        <option value="$PROJECT_DIR$/Day6/student-microservice-security/pom.xml" />
+        <option value="$PROJECT_DIR$/Day7/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/Day7/spring-calculator/pom.xml" />
+        <option value="$PROJECT_DIR$/Day7/student-microservice/pom.xml" />
+        <option value="$PROJECT_DIR$/Day9/demo_mongo/pom.xml" />
+        <option value="$PROJECT_DIR$/Day9/mysql-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/Day9/spring-rest-communication/pom.xml" />
+        <option value="$PROJECT_DIR$/Day10/spring-rest-communication/pom.xml" />
+        <option value="$PROJECT_DIR$/Day11/eureka-app/pom.xml" />
+        <option value="$PROJECT_DIR$/Day12/fourth-rabbit-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/Day12/fourth-artemis-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/Day 13/pension-management-system/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

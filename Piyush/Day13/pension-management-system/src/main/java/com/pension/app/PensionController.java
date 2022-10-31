@@ -56,10 +56,10 @@ public class PensionController {
         Pension pension1 = pensionService.getPensionById(id);
         int pid= pension1.getId();
         String ptr = Integer.toString(pid);
-        String estat = pension1.getEmployee_status();
-        String pstat = pension1.getPension_status();
+        String employee_status = pension1.getEmployee_status();
+        String pension_status = pension1.getPension_status();
 
-        String str = "Id = "+ptr + "\nEmployee Status = "+estat+"\nPension Status = "+pstat;
+        String str = "Id = "+ptr + "\nEmployee Status = "+employee_status+"\nPension Status = "+pension_status;
         return str;
     }
 
