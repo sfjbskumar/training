@@ -1,4 +1,4 @@
-package com.practice.miniproject;
+/*package com.practice.miniproject;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -10,3 +10,4 @@ class PensionManagementApplicationTests {
     void contextLoads() {
     }
 }
+*/
