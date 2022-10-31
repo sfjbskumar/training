@@ -1,5 +1,6 @@
-package com.Pension.app;
+package com.student.app;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -11,12 +12,12 @@ public class PensionController {
     @Autowired
     PensionService pensionService;
     @PostMapping("/create/applicant")
-    private String savePension(@RequestBody Pension pension){
+    private String savePension(@RequestBody com.Pension.app.Pension pension){
         pensionService.saveOrUpadate(pension);
         return pension.getName();
     }
     @PostMapping("/edit/applicant")
-    private List<Pension> getAllPension(){ return pensionService.getAllPension(); }
+    private List<com.Pension.app.Pension> getAllPension(){ return pensionService.getAllPension(); }
 
     @GetMapping("/approve/{id}")
     private Pension getPension(@PathVariable("id")int id){return pensionService.getPensionById(id);}
