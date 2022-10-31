@@ -57,6 +57,20 @@ public class Pension {
     public String getName(){
         return name;
     }
+
+
+    public Pension(int id, int age, String name, int balance, int phone, String employee_status, String pension_status, String pension_money, int installment) {
+        this.id = id;
+        this.age = age;
+        this.name = name;
+        this.balance = balance;
+        this.phone = phone;
+        this.employee_status = employee_status;
+        this.pension_status = pension_status;
+        this.pension_money = pension_money;
+        this.installment = installment;
+    }
+
     public void setName(String name){
         this.name=name;
     }
