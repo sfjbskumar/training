@@ -1,4 +1,4 @@
-package com.sagar.demo.service;
+package com.student.app;
 
 import java.util.ArrayList;
 import java.util.List;
