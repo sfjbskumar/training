@@ -14,7 +14,7 @@
 #   Set larger code cache with -XX:ReservedCodeCacheSize=
 # This output file may be truncated or incomplete.
 #
-#  Out of Memory Error (./open/src/hotspot/os/windows/os_windows.cpp:3287), pid=16008, tid=15404
+#  Out of Memory Error (./open/src/hotspot/os/windows/os_windows.cpp:3287), pid=116944, tid=6440
 #
 # JRE version:  (11.0.16+11) (build )
 # Java VM: Java HotSpot(TM) 64-Bit Server VM (11.0.16+11-LTS-199, mixed mode, sharing, tiered, compressed oops, g1 gc, windows-amd64)
@@ -23,16 +23,16 @@
 
 ---------------  S U M M A R Y ------------
 
-Command Line: -Dclassworlds.conf=C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5\bin\m2.conf -Dmaven.home=C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5 -Dlibrary.jansi.path=C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5\lib\jansi-native -Dmaven.multiModuleProjectDirectory=C:\Users\sfjbs\IdeaProjects\training\sriprabha\Day11\eureka-app\school-service org.codehaus.plexus.classworlds.launcher.Launcher spring-boot:run
+Command Line: -Dclassworlds.conf=C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5\bin\m2.conf -Dmaven.home=C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5 -Dlibrary.jansi.path=C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5\lib\jansi-native -Dmaven.multiModuleProjectDirectory=C:\Users\sfjbs\IdeaProjects\training\sriprabha\Day13\pension-management-system org.codehaus.plexus.classworlds.launcher.Launcher clean install -DskipTests
 
 Host: Intel(R) Xeon(R) Platinum 8272CL CPU @ 2.60GHz, 2 cores, 7G,  Windows 10 , 64 bit Build 19041 (10.0.19041.1889)
-Time: Thu Oct 20 09:12:04 2022 Coordinated Universal Time elapsed time: 0.018516 seconds (0d 0h 0m 0s)
+Time: Tue Nov  1 09:00:52 2022 Coordinated Universal Time elapsed time: 0.020642 seconds (0d 0h 0m 0s)
 
 ---------------  T H R E A D  ---------------
 
-Current thread (0x000002614c5c7000):  JavaThread "Unknown thread" [_thread_in_vm, id=15404, stack(0x000000ccdc600000,0x000000ccdc700000)]
+Current thread (0x0000020891b8a800):  JavaThread "Unknown thread" [_thread_in_vm, id=6440, stack(0x0000000ed4000000,0x0000000ed4100000)]
 
-Stack: [0x000000ccdc600000,0x000000ccdc700000]
+Stack: [0x0000000ed4000000,0x0000000ed4100000]
 Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
 V  [jvm.dll+0x62a3ea]
 V  [jvm.dll+0x76418f]
@@ -63,22 +63,22 @@ C  [ntdll.dll+0x526a1]
 ---------------  P R O C E S S  ---------------
 
 Threads class SMR info:
-_java_thread_list=0x000002614c4d1920, length=0, elements={
+_java_thread_list=0x000002088fa11a40, length=0, elements={
 }
 
 Java Threads: ( => current thread )
 
 Other Threads:
-  0x000002614c5dc800 GCTaskThread "GC Thread#0" [stack: 0x000000ccdc700000,0x000000ccdc800000] [id=8920]
-  0x000002614c60e000 ConcurrentGCThread "G1 Main Marker" [stack: 0x000000ccdc800000,0x000000ccdc900000] [id=9128]
-  0x000002614c60f000 ConcurrentGCThread "G1 Conc#0" [stack: 0x000000ccdc900000,0x000000ccdca00000] [id=12656]
+  0x0000020891ba0000 GCTaskThread "GC Thread#0" [stack: 0x0000000ed4100000,0x0000000ed4200000] [id=10668]
+  0x0000020891bca800 ConcurrentGCThread "G1 Main Marker" [stack: 0x0000000ed4200000,0x0000000ed4300000] [id=241140]
+  0x0000020891bcd000 ConcurrentGCThread "G1 Conc#0" [stack: 0x0000000ed4300000,0x0000000ed4400000] [id=11824]
 
-[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffb7d7bf357]
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffaaa8df357]
 
 VM state:not at safepoint (not fully initialized)
 
 VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
-[0x000002614c5c2b70] Heap_lock - owner thread: 0x000002614c5c7000
+[0x0000020891b87ef0] Heap_lock - owner thread: 0x0000020891b8a800
 
 Heap address: 0x0000000080000000, size: 2048 MB, Compressed Oops mode: Non-zero based: 0x0000000080000000
 Narrow klass base: 0x0000000000000000, Narrow klass shift: 0
@@ -100,46 +100,46 @@ No events
 
 
 Dynamic libraries:
-0x00007ff6325f0000 - 0x00007ff6325ff000 	C:\Program Files\Java\jdk-11.0.16\bin\java.exe
-0x00007ffbf1eb0000 - 0x00007ffbf20a8000 	C:\Windows\SYSTEM32\ntdll.dll
-0x00007ffbf0220000 - 0x00007ffbf02dd000 	C:\Windows\System32\KERNEL32.DLL
-0x00007ffbef6c0000 - 0x00007ffbef992000 	C:\Windows\System32\KERNELBASE.dll
-0x00007ffbef5c0000 - 0x00007ffbef6c0000 	C:\Windows\System32\ucrtbase.dll
-0x00007ffbd6d00000 - 0x00007ffbd6d18000 	C:\Program Files\Java\jdk-11.0.16\bin\jli.dll
-0x00007ffbf0600000 - 0x00007ffbf06ae000 	C:\Windows\System32\ADVAPI32.dll
-0x00007ffbeffe0000 - 0x00007ffbf007e000 	C:\Windows\System32\msvcrt.dll
-0x00007ffbf1420000 - 0x00007ffbf14bc000 	C:\Windows\System32\sechost.dll
-0x00007ffbf14c0000 - 0x00007ffbf15e5000 	C:\Windows\System32\RPCRT4.dll
-0x00007ffbf0080000 - 0x00007ffbf021d000 	C:\Windows\System32\USER32.dll
-0x00007ffbefb00000 - 0x00007ffbefb22000 	C:\Windows\System32\win32u.dll
-0x00007ffbf16f0000 - 0x00007ffbf171b000 	C:\Windows\System32\GDI32.dll
-0x00007ffbef9a0000 - 0x00007ffbefaaf000 	C:\Windows\System32\gdi32full.dll
-0x00007ffbefdd0000 - 0x00007ffbefe6d000 	C:\Windows\System32\msvcp_win.dll
-0x00007ffbd6ce0000 - 0x00007ffbd6cf5000 	C:\Program Files\Java\jdk-11.0.16\bin\VCRUNTIME140.dll
-0x00007ffbd78d0000 - 0x00007ffbd7b6a000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\COMCTL32.dll
-0x00007ffbe5d70000 - 0x00007ffbe5d7a000 	C:\Windows\SYSTEM32\VERSION.dll
-0x00007ffbf1610000 - 0x00007ffbf1640000 	C:\Windows\System32\IMM32.DLL
-0x00007ffbd2d10000 - 0x00007ffbd2dab000 	C:\Program Files\Java\jdk-11.0.16\bin\msvcp140.dll
-0x00007ffb7d4e0000 - 0x00007ffb7dff8000 	C:\Program Files\Java\jdk-11.0.16\bin\server\jvm.dll
-0x00007ffbf1600000 - 0x00007ffbf1608000 	C:\Windows\System32\PSAPI.DLL
-0x00007ffb93ff0000 - 0x00007ffb93ff9000 	C:\Windows\SYSTEM32\WSOCK32.dll
-0x00007ffbf0e10000 - 0x00007ffbf0e7b000 	C:\Windows\System32\WS2_32.dll
-0x00007ffbcc830000 - 0x00007ffbcc857000 	C:\Windows\SYSTEM32\WINMM.dll
-0x00007ffbed460000 - 0x00007ffbed472000 	C:\Windows\SYSTEM32\kernel.appcore.dll
-0x00007ffbdefe0000 - 0x00007ffbdeff0000 	C:\Program Files\Java\jdk-11.0.16\bin\verify.dll
-0x00007ffbe1d70000 - 0x00007ffbe1f54000 	C:\Windows\SYSTEM32\DBGHELP.DLL
-0x00007ffbe24c0000 - 0x00007ffbe24ec000 	C:\Windows\SYSTEM32\dbgcore.DLL
-0x00007ffbefd40000 - 0x00007ffbefdc2000 	C:\Windows\System32\bcryptPrimitives.dll
-0x00007ffbd6ef0000 - 0x00007ffbd6f18000 	C:\Program Files\Java\jdk-11.0.16\bin\java.dll
-0x00007ffbdefd0000 - 0x00007ffbdefda000 	C:\Program Files\Java\jdk-11.0.16\bin\jimage.dll
-0x00007ffbd6d30000 - 0x00007ffbd6d46000 	C:\Program Files\Java\jdk-11.0.16\bin\zip.dll
+0x00007ff67a300000 - 0x00007ff67a30f000 	C:\Program Files\Java\jdk-11.0.16\bin\java.exe
+0x00007ffafc1b0000 - 0x00007ffafc3a8000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffafb350000 - 0x00007ffafb40d000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ffaf9da0000 - 0x00007ffafa072000 	C:\Windows\System32\KERNELBASE.dll
+0x00007ffaf9ae0000 - 0x00007ffaf9be0000 	C:\Windows\System32\ucrtbase.dll
+0x00007ffaea400000 - 0x00007ffaea418000 	C:\Program Files\Java\jdk-11.0.16\bin\jli.dll
+0x00007ffafb630000 - 0x00007ffafb6de000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ffafb590000 - 0x00007ffafb62e000 	C:\Windows\System32\msvcrt.dll
+0x00007ffafc0d0000 - 0x00007ffafc16c000 	C:\Windows\System32\sechost.dll
+0x00007ffafa490000 - 0x00007ffafa5b5000 	C:\Windows\System32\RPCRT4.dll
+0x00007ffafa210000 - 0x00007ffafa3ad000 	C:\Windows\System32\USER32.dll
+0x00007ffaf98c0000 - 0x00007ffaf98e2000 	C:\Windows\System32\win32u.dll
+0x00007ffafb8c0000 - 0x00007ffafb8eb000 	C:\Windows\System32\GDI32.dll
+0x00007ffaf9be0000 - 0x00007ffaf9cef000 	C:\Windows\System32\gdi32full.dll
+0x00007ffafa080000 - 0x00007ffafa11d000 	C:\Windows\System32\msvcp_win.dll
+0x00007ffade190000 - 0x00007ffade1a5000 	C:\Program Files\Java\jdk-11.0.16\bin\VCRUNTIME140.dll
+0x00007ffad58e0000 - 0x00007ffad5b7a000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\COMCTL32.dll
+0x00007ffaf1ca0000 - 0x00007ffaf1caa000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ffafa620000 - 0x00007ffafa650000 	C:\Windows\System32\IMM32.DLL
+0x00007ffadb3a0000 - 0x00007ffadb43b000 	C:\Program Files\Java\jdk-11.0.16\bin\msvcp140.dll
+0x00007ffaaa600000 - 0x00007ffaab118000 	C:\Program Files\Java\jdk-11.0.16\bin\server\jvm.dll
+0x00007ffafb8f0000 - 0x00007ffafb8f8000 	C:\Windows\System32\PSAPI.DLL
+0x00007ffae6bd0000 - 0x00007ffae6bd9000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ffafb240000 - 0x00007ffafb2ab000 	C:\Windows\System32\WS2_32.dll
+0x00007ffad3540000 - 0x00007ffad3567000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffaf7760000 - 0x00007ffaf7772000 	C:\Windows\SYSTEM32\kernel.appcore.dll
+0x00007ffadf820000 - 0x00007ffadf830000 	C:\Program Files\Java\jdk-11.0.16\bin\verify.dll
+0x00007ffaea210000 - 0x00007ffaea3f4000 	C:\Windows\SYSTEM32\DBGHELP.DLL
+0x00007ffaea1e0000 - 0x00007ffaea20c000 	C:\Windows\SYSTEM32\dbgcore.DLL
+0x00007ffaf98f0000 - 0x00007ffaf9972000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ffadb960000 - 0x00007ffadb988000 	C:\Program Files\Java\jdk-11.0.16\bin\java.dll
+0x00007ffadf3d0000 - 0x00007ffadf3da000 	C:\Program Files\Java\jdk-11.0.16\bin\jimage.dll
+0x00007ffaddd50000 - 0x00007ffaddd66000 	C:\Program Files\Java\jdk-11.0.16\bin\zip.dll
 
 dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
 symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Java\jdk-11.0.16\bin;C:\Windows\SYSTEM32;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e;C:\Program Files\Java\jdk-11.0.16\bin\server
 
 VM Arguments:
-jvm_args: -Dclassworlds.conf=C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5\bin\m2.conf -Dmaven.home=C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5 -Dlibrary.jansi.path=C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5\lib\jansi-native -Dmaven.multiModuleProjectDirectory=C:\Users\sfjbs\IdeaProjects\training\sriprabha\Day11\eureka-app\school-service 
-java_command: org.codehaus.plexus.classworlds.launcher.Launcher spring-boot:run
+jvm_args: -Dclassworlds.conf=C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5\bin\m2.conf -Dmaven.home=C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5 -Dlibrary.jansi.path=C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5\lib\jansi-native -Dmaven.multiModuleProjectDirectory=C:\Users\sfjbs\IdeaProjects\training\sriprabha\Day13\pension-management-system 
+java_command: org.codehaus.plexus.classworlds.launcher.Launcher clean install -DskipTests
 java_class_path (initial): C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5\boot\plexus-classworlds-2.6.0.jar
 Launcher Type: SUN_STANDARD
 
@@ -169,7 +169,7 @@ Log output configuration:
  #1: stderr all=off uptime,level,tags
 
 Environment Variables:
-PATH=C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5\bin;C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5\lib;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Git\cmd;C:\Users\sfjbs\AppData\Local\Microsoft\WindowsApps;C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5\bin;C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5\lib;;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.1\bin;
+PATH=C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5\bin;C:\Users\sfjbs\Downloads\micro service-20221001T123314Z-001\micro service\apache-maven-3.8.5-bin\apache-maven-3.8.5\lib;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Git\cmd;C:\Users\sfjbs\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.1\bin
 USERNAME=sfjbs
 OS=Windows_NT
 PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 85 Stepping 7, GenuineIntel
@@ -183,8 +183,8 @@ Hyper-V role detected
 
 CPU:total 2 (initial active 2) (1 cores per cpu, 2 threads per core) family 6 model 85 stepping 7 microcode 0xffffffff, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, rtm, 3dnowpref, lzcnt, ht, tsc, bmi1, bmi2, adx, evex, fma
 
-Memory: 4k page, system-wide physical 8190M (837M free)
-TotalPageFile size 10238M (AvailPageFile size 27M)
+Memory: 4k page, system-wide physical 8190M (989M free)
+TotalPageFile size 10238M (AvailPageFile size 97M)
 current process WorkingSet (physical memory assigned to process): 9M, peak: 9M
 current process commit charge ("private bytes"): 47M, peak: 175M
 
