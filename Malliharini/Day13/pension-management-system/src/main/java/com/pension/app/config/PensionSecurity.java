@@ -9,22 +9,27 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 
 @Configuration
 public class PensionSecurity extends WebSecurityConfigurerAdapter {
+    private static final String ADMIN = "ADMIN";
+    private static final String PWD = "{noop}password";
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+
+
         http.httpBasic().and().authorizeRequests()
-                .antMatchers(HttpMethod.POST, "/save/student").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.PUT, "/update/student").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.GET, "/get/student").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.GET, "/get/all").hasAnyRole("ADMIN")
-                .antMatchers(HttpMethod.GET, "/remove/student").hasAnyRole("ADMIN").and().csrf().disable().headers()
+                .antMatchers(HttpMethod.POST, "/create/applicant").hasAnyRole(ADMIN)
+                .antMatchers(HttpMethod.PUT, "/edit/applicant").hasAnyRole(ADMIN)
+                .antMatchers(HttpMethod.PUT, "/issuePension").hasAnyRole(ADMIN)
+                .antMatchers(HttpMethod.PUT, "/loadPension").hasAnyRole(ADMIN)
+                .antMatchers(HttpMethod.PUT, "/approve/{id}").hasAnyRole(ADMIN)
+                .and().csrf().disable().headers()
                 .frameOptions().disable();
     }
 
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-        auth.inMemoryAuthentication().withUser("user123").password("{noop}password").roles("USER").and()
-                .withUser("admin123").password("{noop}password").roles("ADMIN").and().withUser("test123")
-                .password("{noop}password").roles("USER").and().withUser("ramashanker").password("{noop}password")
-                .roles("ADMIN");
+        auth.inMemoryAuthentication().withUser("user123").password(PWD).roles("USER").and()
+                .withUser("admin123").password(PWD).roles(ADMIN).and().withUser("test123")
+                .password(PWD).roles("USER").and().withUser("ramashanker").password(PWD)
+                .roles(ADMIN);
     }
 }

@@ -37,7 +37,8 @@ public class PensionController {
 
     //checkStatus id, emp and pension status (applicant)
     @GetMapping("/checkStatus/{id}")
-    public String checkStatus(@PathVariable("id") int id){
+    public String checkStatus(@PathVariable("id") int id)
+    {
         return pensionService.getStatus(id);
     }
 

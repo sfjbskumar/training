@@ -1,0 +1,7 @@
+
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÔÍ‡øÿÿÿÿ
+f
+java:S3655"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(¨•Ë’
+U
+java:S1612":Replace this lambda with method reference 'pensions::add'.(ÌÜû§şÿÿÿÿ

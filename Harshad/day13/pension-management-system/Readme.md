@@ -19,53 +19,21 @@ mvn spring-boot:run
 # Testing the application
 Save Data:
 
-curl --location --request POST 'localhost:8088/createApplicant' \
+curl --location --request POST 'localhost:8081/save/student' \
 --header 'Content-Type: application/json' \
---data-raw '
-{
-"id":1,
-"name":"Harshit",
-"age":22,
-"balance":100000,
-"mobile":98889955,
-"empStatus":"R",
-"pensionStatus":"N",
-"pensionMMYY":"09-22",
-"installment":10000
-}
+--data-raw '{
+"rollNo":"134",
+"name":"stud1",
+"std":"5th"
+}'
 
-# Admin Oprations
+Get data:
+curl --location --request GET 'localhost:8081/get/student?name=stud1'
 
-# Create a Applicant
+Update data:
 
-http://localhost:8088/createApplicant
+curl --location --request PUT 'localhost:8081/update/student?name=stud1&std=5th'
 
-# Edit Applicant's details
+Remove Data:
 
-http://localhost:8088/editApplicant
-
-# Issue Pension to Employees
-
-http://localhost:8088/issuePension
-
-# Load Balance to Employees
-
-http://localhost:8088/loadBalance
-
-# Approve pension 
-
-http://localhost:8088/approve
-
-# User Operations
-
-# Check Penstion Status
-
-http://localhost:8088/checkStatus/{id}
-
-# Check Balance status
-
-http://localhost:8088/checkBalance/{id}
-
-# Check Application details
-
-http://localhost:8088/checkApplication/{id}
+curl --location --request DELETE 'localhost:8081/remove/student?name=stud1'
