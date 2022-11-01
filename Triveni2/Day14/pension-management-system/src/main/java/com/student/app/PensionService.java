@@ -1,10 +1,8 @@
-package com.pension.app.service;
+package com.student.app;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.pension.app.model.Pension;
-import com.pension.app.repository.PensionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.*;
@@ -68,12 +66,12 @@ public class PensionService
     //issuePension to all applicants with empStatus R and PensionStatus Y
     public void issuePension(){
         //current MMYY
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMYY");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMyy");
         String currentMMYY = simpleDateFormat.format(new Date());
 
         SimpleDateFormat monthFormat = new SimpleDateFormat("MM");
         String currentMonth=monthFormat.format(new Date());
-        SimpleDateFormat yearFormat = new SimpleDateFormat("YY");
+        SimpleDateFormat yearFormat = new SimpleDateFormat("yy");
         String currentYear=yearFormat.format(new Date());
 
         //previous MMYY
@@ -89,12 +87,12 @@ public class PensionService
     //loadPension to all applicants with empStatus A and PensionStatus N
     public void loadPension(){
         //current MMYY
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMYY");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMyy");
         String currentMMYY = simpleDateFormat.format(new Date());
 
         SimpleDateFormat monthFormat = new SimpleDateFormat("MM");
         String currentMonth=monthFormat.format(new Date());
-        SimpleDateFormat yearFormat = new SimpleDateFormat("YY");
+        SimpleDateFormat yearFormat = new SimpleDateFormat("yy");
         String currentYear=yearFormat.format(new Date());
 
         //previous MMYY

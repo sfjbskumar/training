@@ -1,12 +1,7 @@
-package com.pension.app;
+package com.student.app;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
-
-import com.pension.app.model.Pension;
-import com.pension.app.model.PensionBuilder;
-import com.pension.app.repository.PensionRepository;
-import com.pension.app.service.PensionService;
 import org.assertj.core.api.Assertions;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
