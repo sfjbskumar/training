@@ -36,9 +36,10 @@ public class PensionModel {
     @Column
     private int installment;
 
-  public PensionModel(  int age, int balance,String phone,  String empstatus, String penstatus, String penmmyy, int installment) {
+  public PensionModel(  int id,int age,String name, int balance,String phone,  String empstatus, String penstatus, String penmmyy, int installment) {
 
-
+this.id=id;
+this.name=name;
         this.age=age;
         this.balance=balance;
         this.phone=phone;
