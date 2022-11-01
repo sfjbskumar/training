@@ -2,6 +2,7 @@ package com.pension.app;
 
 import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import java.util.List;
 
 
@@ -10,6 +11,7 @@ public class PensionController {
     @Autowired
     PensionService pensionService;
     PensionRepository pensionRepository;
+
 
     private static final String EMPSTAT = "\nEmployee Status :";
 
@@ -26,10 +28,10 @@ public class PensionController {
     }
 
     @PostMapping("/createApplicant")
-    public int savePension(@RequestBody Pension pension)
+    public Pension createApplicant(@RequestBody Pension pension)
     {
-        pensionService.saveOrUpdate(pension);
-        return pension.getId();
+        return pensionService.saveOrUpdate(pension);
+
     }
 
     @PostMapping("/editApplicant")
@@ -72,62 +74,6 @@ public class PensionController {
         return "Id = "+ptr + "\nBalance = "+btr+"\nInstallment = "+itr+"\nPension Month = "+pmy;
 
     }
-    @PutMapping("/issuePension/{id}")
-    public String putPension(@PathVariable("id") int id){
-        Pension pension1 = pensionService.getPensionById(id);
-        String es = pension1.getEmpstatus();
-        String ps = pension1.getPenstatus();
-        String name = pension1.getName();
-        if(es.equals("R") && ps.equals("Y")) {
-            int bal = pension1.getBalance();
-            int inst = pension1.getInstallment();
-            bal = bal - inst;
-            pension1.setBalance(bal);
-            pensionService.saveOrUpdate(pension1);
-            return  "Pension issued to " + name + "\nAvalaible Balance : " + bal;
-
-        }
-        else{
-            return "Pension cannot be issued to "+name+EMPSTAT+es+"\nPension Status :"+ps;
-        }
-    }
-
-    @PutMapping("/loadBalance/{id}")
-    public String putBalance(@PathVariable("id") int id){
-        Pension pension1 = pensionService.getPensionById(id);
-        String es = pension1.getEmpstatus();
-        String ps = pension1.getPenstatus();
-        String name = pension1.getName();
-        if(es.equals("W") && ps.equals("N")) {
-            int bal = pension1.getBalance();
-            int inst = pension1.getInstallment();
-            bal = bal + inst;
-            pension1.setBalance(bal);
-            pensionService.saveOrUpdate(pension1);
-            return "Balance credited to " + name + "\nAvailable Balance : " + bal;
-
-        }
-        else{
-            return "Balance cannot be credited to "+name+EMPSTAT+es+"\nPension Status :"+ps;
-
-        }
-    }
-
-    @PutMapping("/approve/{id}")
-    public String getApprove(@PathVariable("id") int id){
-        Pension pension1 = pensionService.getPensionById(id);
-        String es = pension1.getEmpstatus();
-        if(es.equals("R")) {
-            pension1.setPenstatus("Y");
-            pensionService.saveOrUpdate(pension1);
-            return  "Pension Approved !";
-
-        }
-        else{
-            return "Pension cannot be approved."+EMPSTAT+es;
-
-        }
-    }
 
     @GetMapping("/checkApplication/{id}")
     public Pension getPensionApp(@PathVariable("id") int id)
@@ -136,15 +82,16 @@ public class PensionController {
     }
 
     @DeleteMapping("/pension/{id}")
-    public void deletePension(@PathVariable("id") int id)
+    public String deletePension(@PathVariable("id") int id)
     {
-        pensionService.delete(id);
+
+        return pensionService.delete(id);
     }
 
     @GetMapping("/issuePensions")
-    public String putPensions(){
+    public String issuePensions(){
         int f=0;
-        List<Pension> list = pensionService.getAllPension();
+        List<Pension> list =pensionService.getAllPension();
 
 
         for(int i=0;i<list.size();i++) {
@@ -158,7 +105,7 @@ public class PensionController {
                 bal = bal - inst;
                 pension1.setBalance(bal);
                 pensionService.saveOrUpdate(pension1);
-               f++;
+                f++;
             }
 
         }
@@ -171,7 +118,6 @@ public class PensionController {
 
 
     }
-
     @GetMapping("/loadBalance")
     public String loadPensions(){
         int f=0;
@@ -196,6 +142,30 @@ public class PensionController {
         }
         else{
             return "Balance not credited !";
+        }
+    }
+
+    @GetMapping("/approve")
+    public String aPensions(){
+        int f=0;
+        List<Pension> list = pensionService.getAllPension();
+
+        for(int i=0;i<list.size();i++) {
+            Pension pension1 = list.get(i);
+            String es = pension1.getEmpstatus();
+            String ps = pension1.getPenstatus();
+            if (es.equals("R") && ps.equals("N")) {
+                pension1.setPenstatus("Y");
+                pensionService.saveOrUpdate(pension1);
+                f++;
+            }
+
+        }
+        if(f>0){
+            return "Pension approved !";
+        }
+        else{
+            return "Pension cannot be approved !";
         }
     }
 

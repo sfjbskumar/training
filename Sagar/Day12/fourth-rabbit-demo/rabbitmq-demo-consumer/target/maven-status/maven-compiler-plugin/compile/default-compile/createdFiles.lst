@@ -1,0 +1,3 @@
+com\rama\rabbitmq\model\Employee.class
+com\rama\rabbitmq\component\RabbitMQConsumer.class
+com\rama\rabbitmq\ConsumerApplication.class
