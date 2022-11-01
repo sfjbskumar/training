@@ -1,6 +1,9 @@
-package com.student.app;
+package com.pension.app.Controller;
 
 import java.util.List;
+
+import com.pension.app.Model.Pension;
+import com.pension.app.Service.PensionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;

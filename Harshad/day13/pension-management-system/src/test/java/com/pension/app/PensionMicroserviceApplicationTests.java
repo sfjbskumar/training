@@ -26,7 +26,8 @@ class PensionMicroserviceApplicationTests {
 	void contextLoads() {
 	}
 	@Test
-	 void getAllPensionTest(){
+	 void getAllPensionTest()
+	{
 		when(pensionRepo.findAll()).thenReturn(Stream.of(new Pension(1,22,"Sushil S",10000,334545,"R","Y","4-2022",1000), new Pension(2,22,"Sushil S",10000,334545,"R","Y","4-2022",1000)).collect(Collectors.toList()));
 		assertEquals(7,service.getAllPension().size());
 	}

@@ -163,7 +163,7 @@ public class PensionController {
 
         }
         if(f>0){
-            return "Pension Updated !";
+            return "Pension Updated !"+f;
         }
         else{
             return "Pensions are not Updated !";
