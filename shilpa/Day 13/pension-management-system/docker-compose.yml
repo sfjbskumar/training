@@ -1,0 +1,6 @@
+version: '3.2'
+services:
+  sprig-boot-app:
+    image: sivani170301/demo_repo1:latest
+    ports:
+      - "8080:8080"
