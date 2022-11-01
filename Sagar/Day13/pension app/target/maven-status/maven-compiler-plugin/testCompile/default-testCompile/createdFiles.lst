@@ -1,0 +1,4 @@
+com\student\app\StudentMicroserviceApplicationTests.class
+com\student\app\PensionServiceTest.class
+com\pension\app\PensionMicroserviceApplicationTests.class
+com\student\app\PensionControllerTest.class

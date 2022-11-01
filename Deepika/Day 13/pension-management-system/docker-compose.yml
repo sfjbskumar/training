@@ -1,0 +1,6 @@
+version: '3.2'
+services:
+  sprig-boot-app:
+    image: deepikahonkan/pension
+    ports:
+      - "8082:8082"
