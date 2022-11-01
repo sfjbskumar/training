@@ -1,6 +1,0 @@
-package com.student.app;
-
-import org.springframework.data.repository.CrudRepository;
-public interface PensionRepository extends CrudRepository<Pension, Integer>
-{
-}
