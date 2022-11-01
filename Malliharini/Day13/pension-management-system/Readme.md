@@ -30,15 +30,15 @@ Content-type: application/json
 Body:
 ``` 
 {
-    "id":107,
-    "name":"Sirisha",
-    "age":62,
-    "balance":109000,
-    "mobile":"9888995522",
+    "id":3,
+    "name":"harini",
+    "age":20,
+    "balance":10000,
+    "mobile":"9888923422",
     "empStatus":"R",
     "pensionStatus":"N",
-    "pensionMMYY":"0922",
-    "installment":1020
+    "pensionMMYY":"0122",
+    "installment":1000
 }
 ``` 
 
@@ -52,21 +52,21 @@ Content-type: application/json
 Body:
 ``` 
 {
-    "id":107,
-    "name":"Sirisha S.",
-    "age":62,
-    "balance":109000,
-    "mobile":"9888995522",
+    "id":3,
+    "name":"harini",
+    "age":22,
+    "balance":10000,
+    "mobile":"9888923422",
     "empStatus":"R",
     "pensionStatus":"N",
-    "pensionMMYY":"0922",
-    "installment":1020
+    "pensionMMYY":"0122",
+    "installment":1000
 }
 ``` 
 # 3.Approve the pension application if empStatus is R, i.e., retired (Admin's operation)
 POST
 ``` 
-http://localhost:8081/approve/107
+http://localhost:8081/approve/3
 ``` 
 
 # 4.Issue Pensions for all Retired employees (Admin's operation)
@@ -84,20 +84,20 @@ http://localhost:8081/loadPension
 # 6. Check Balance (User's operation)
 GET 
 ``` 
-http://localhost:8081/checkBalance/107
+http://localhost:8081/checkBalance/3
 ``` 
 
 # 7. Check Status (User's operation)
 GET
 ``` 
-http://localhost:8081/checkStatus/107
+http://localhost:8081/checkStatus/3
 ``` 
 
 # 8. Check Application Information (User's operation)
 
 GET
 ``` 
-http://localhost:8081/checkApplication/107
+http://localhost:8081/checkApplication/3
 ``` 
 
 # Extra operations for testing
@@ -111,8 +111,9 @@ http://localhost:8081/get/applicants
 Delete application
 DELETE
 ``` 
-http://localhost:8081/delete/applicant/101
+http://localhost:8081/delete/applicant/3
 ``` 
+
 # build docker file
 ```
 mvn install dockerfile:build
@@ -137,18 +138,13 @@ docker exec -it <container-id>/bash
 ```
 # docker pull and up
 ```
- docker pull malliharini/pension-management-system:0.0.1-SNAPSHOT
+docker pull malliharini/pension-management-system:0.0.1-SNAPSHOT
 
 docker-compose  up
 
 ```
 ## Looking docker image
 ```
-#docker exec -it <img id> bash
+docker exec -it <img id> bash
 ```
-mysql -u user -p
-Enter Password:password
-show databases;
-use db;
-show tables;
-select * from pension;
+
