@@ -1,10 +1,8 @@
-package com.pension.app.service;
+package com.student.app;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.pension.app.model.Pension;
-import com.pension.app.repository.PensionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.*;
