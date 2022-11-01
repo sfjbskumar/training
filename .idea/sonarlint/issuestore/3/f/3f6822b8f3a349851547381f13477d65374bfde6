@@ -1,0 +1,17 @@
+
+a
+java:S1192"KDefine a constant instead of duplicating this literal "9988776655" 6 times.(Ð¿ž¹
+]
+java:S1192"GDefine a constant instead of duplicating this literal "Sivani" 6 times.(Ð¿ž¹
+P
+java:S1854R"5Remove this useless assignment to local variable "p".(®Ñçòùÿÿÿÿ
+A
+java:S1481R"&Remove this unused "p" local variable.(®Ñçòùÿÿÿÿ
+P
+java:S1854Z"5Remove this useless assignment to local variable "p".(®Ñçòùÿÿÿÿ
+A
+java:S1481Z"&Remove this unused "p" local variable.(®Ñçòùÿÿÿÿ
+P
+java:S1854d"5Remove this useless assignment to local variable "p".(®Ñçòùÿÿÿÿ
+A
+java:S1481d"&Remove this unused "p" local variable.(®Ñçòùÿÿÿÿ
