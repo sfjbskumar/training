@@ -4,20 +4,17 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.jpa.repository.Modifying;
 
 import org.springframework.data.repository.CrudRepository;
+import com.pension.app.Pension;
 import org.springframework.data.repository.query.Param;
 
 import java.util.List;
-public interface PensionRepository extends CrudRepository<Pension, Integer> {
+public interface PensionRepository extends CrudRepository<Pension, Integer>
+{
     @Modifying
-   @Query(value="update pension set name=:k where empstatus =:n and penstatus =:m", nativeQuery = true)
-    void updatePensionStatus(@Param("k") String name, @Param("n") String empstatus, @Param("m") String penstatus);
-
-    @Query(value = "select * from pension", nativeQuery = true)
-    public List<Pension> getPensions();
-
-    @Modifying
-    @Query(value = "update Pension set name=:'jish kumar' where empstatus ='R' and penstatus ='Y' ", nativeQuery = true)
-    void updatePensionStatus();
-
-
+    @Query("update Pension u set u.empstatus= 'R' " )
+    void deactivateUsersNotLoggedInSince();
 }
+
+
+Stream.of(new pension(201,"sivani",21,8000,"7684925464","A","N",0922,1000)).collect(Collectors.total);
+assertEquals(2,pensionService.getApplicants().size());
