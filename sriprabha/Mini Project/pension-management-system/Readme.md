@@ -10,6 +10,12 @@ https://start.spring.io/
 mvn clean install
 ```
 
+# Build docker
+
+...
+mvn install dockerfile:build
+...
+
 # Run application
 
 ``` 
@@ -20,7 +26,7 @@ mvn spring-boot:run
 
 (Using Postman)
 
-# 1.Creating Applicant (Admin's operation)
+# 1.Creating Applicant (Admin operation)
 POST 
 ``` 
 http://localhost:8083/create/applicant
@@ -42,7 +48,7 @@ Body:
 }
 ``` 
 
-# 2.Editing Applicant details (Admin's operation)
+# 2.Editing Applicant details (Admin operation)
 POST
 ```
 http://localhost:8083/edit/applicant
@@ -63,37 +69,37 @@ Body:
 "installment":1000
 }
 ``` 
-# 3.Approve the pension application if empStatus is R, i.e., retired (Admin's operation)
+# 3.Approve the pension application if empStatus is R, i.e., retired (Admin operation)
 POST
 ``` 
 http://localhost:8083/approve/1
 ``` 
 
-# 4.Issue Pensions for all Retired employees (Admin's operation)
+# 4.Issue Pensions for all Retired employees (Admin operation)
 POST
 ``` 
 http://localhost:8083/issuePension
 ``` 
 
-# 5.Load Pensions for all Active employees (Admin's operation)
+# 5.Load Pensions for all Active employees (Admin operation)
 POST
 ``` 
 http://localhost:8083/loadPension
 ``` 
 
-# 6. Check Balance (User's operation)
+# 6. Check Balance (User operation)
 GET 
 ``` 
 http://localhost:8083/checkBalance/8
 ``` 
 
-# 7. Check Status (User's operation)
+# 7. Check Status (User operation)
 GET
 ``` 
 http://localhost:8083/checkStatus/1
 ``` 
 
-# 8. Check Application Information (User's operation)
+# 8. Check Application Information (User operation)
 
 GET
 ``` 
