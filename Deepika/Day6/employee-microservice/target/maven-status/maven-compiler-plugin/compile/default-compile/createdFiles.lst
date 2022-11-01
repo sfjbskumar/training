@@ -1,0 +1,4 @@
+com\student\app\StudentMicroserviceApplication.class
+com\student\app\config\StudentSecurity.class
+com\student\app\Student.class
+com\student\app\StudentController.class
