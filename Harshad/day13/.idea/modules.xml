@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/day13.iml" filepath="$PROJECT_DIR$/.idea/day13.iml" />
-<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/pension-management-system/pension-management-system.iml" filepath="$PROJECT_DIR$/pension-management-system/pension-management-system.iml" />
-=======
->>>>>>> a2ea5a5abb6b46d5f3220ca7be36d5588e7796ff
     </modules>
   </component>
 </project>
