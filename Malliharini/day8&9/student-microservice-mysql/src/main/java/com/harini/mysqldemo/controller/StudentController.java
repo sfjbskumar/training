@@ -36,7 +36,7 @@ public class StudentController
         studentService.delete(id);
     }
     //creating post mapping that post the student detail in the database
-    @PostMapping("/student")
+    @PostMapping("/student"
     private int saveStudent(@RequestBody Student student)
     {
         studentService.saveOrUpdate(student);
