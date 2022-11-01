@@ -1,0 +1,15 @@
+
+f
+java:S1192/"KDefine a constant instead of duplicating this literal "9988776655" 5 times.(Á¾Ã·üÿÿÿÿ
+\
+java:S1192,"GDefine a constant instead of duplicating this literal "Sivani" 5 times.(¥Ò¦
+f	java:S1177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô¿ˆË
+k	java:S117Y"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜¨¶Äıÿÿÿÿ
+k	java:S117t"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Àõ²îûÿÿÿÿ
+g	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒÜ²
+l	java:S117º"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãí¨øÿÿÿÿ
+S
+java:S1854º"7Remove this useless assignment to local variable "URI".(ãí¨øÿÿÿÿ
+D
+java:S1481º"(Remove this unused "URI" local variable.(ãí¨øÿÿÿÿ
+R	java:S125¾"<This block of commented-out lines of code should be removed.(û—¨ü
