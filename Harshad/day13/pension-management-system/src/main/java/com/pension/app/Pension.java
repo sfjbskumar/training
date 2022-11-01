@@ -5,9 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-@Table
-//@Component
+@Entity(name="pension")
+@Table(name="pension")
 public class Pension {
     public Pension(int id, int age, String name, int balance, int phone, String empstatus, String penstatus, String penmmyy, int installment) {
         this.id = id;
@@ -25,7 +24,7 @@ public class Pension {
 
     @Id
 
-@Column
+    @Column
     private int id;
 
     @Column
