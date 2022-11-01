@@ -11,47 +11,70 @@ import java.util.Map;
 public class PensionController {
 
     @Autowired
-    PensionService pensionService;
-    @PostMapping("/create/applicant")
-    private String savePension(@RequestBody Pension pension){
-        pensionService.saveOrUpadate(pension);
-        return pension.getName();
-    }
-    @PostMapping("/edit/applicant")
-    private List<Pension> getAllPension(){ return pensionService.getAllPension(); }
+    PensionService ps;
 
-    @GetMapping("/approve/{id}")
-    private Pension getPension(@PathVariable("id")int id){return pensionService.getPensionById(id);}
+    @PostMapping("/create/applicant")
+    public Pension createApplicant(@RequestBody Pension pension)
+    {
+       return  ps.createOrUpdate(pension);
+    }
+
+    @PostMapping("/edit/applicant")
+    public int editApplicant(@RequestBody Pension pension)
+    {
+        ps.createOrUpdate(pension);
+        return pension.getId();
+    }
 
     @GetMapping("/checkStatus/{id}")
-    private String getPensionStatus(@PathVariable("id") int id)
-    {
-        Pension pension1 = pensionService.getPensionById(id);
-        int pid= pension1.getId();
-        String ptr = Integer.toString(pid);
-        String estat = pension1.getEmpStatus();
-        String pstat = pension1.getPensionstatus();
-
-        String str = "Id = "+ptr + "\nEmployee Status = "+estat+"\nPension Status = "+pstat;
-        return str;
+    public String checkStatus(@PathVariable("id") int id){
+        return ps.getStatus(id);
     }
 
+    @GetMapping("/getapplicant/{id}")
+    public Pension getApplicantById(@PathVariable("id") int id){
+        return ps.getApplicantById(id);
+    }
+
+
+    //checkBalance (applicant)
     @GetMapping("/checkBalance/{id}")
-    private String getPensionBalance(@PathVariable("id") int id)
-    {
-        Pension pension1 = pensionService.getPensionById(id);
-        int pid= pension1.getId();
-        String ptr = Integer.toString(pid);
-        int bal = pension1.getBalanceAmount();
-        String btr = Integer.toString(bal);
-        int inst = pension1.getInstallments();
-        String itr = Integer.toString(inst);
-        String pmy = pension1.getPensionstarts();
-        String str = "Id = "+ptr + "\nBalance = "+btr+"\nInstallment = "+itr+"\nPension Month = "+pmy;
-        return str;
+    public int checkBalance(@PathVariable("id") int id){
+        return ps.getBalanceDetails(id);
     }
 
-    @GetMapping("/checkApplication/{id}")
-    private List<Pension> getAllPension(@PathVariable("id")int id){return (List<Pension>) pensionService.getPensionById(id);}
+    @DeleteMapping("/delete/applicant/{id}")
+    public String deleteApplicant(@PathVariable("id") int id)
+    {
+        return ps.delete(id);
+
+    }
+    @GetMapping("/get/applicants")
+    public List<Pension> getAllApplicants()
+    {
+        return ps.getAllApplicants();
+    }
+
+    @PostMapping("/approve/{id}")
+    public String approveApplication(@PathVariable("id") int id){
+        return ps.approveApplication(id);
+    }
+
+
+    //issue pension to retired employees (admin only)
+    @PostMapping("/issuePension")
+    public void issuePension(){
+        ps.issuePension();
+    }
+
+    //load pension to active employees (admin only)
+    @PostMapping("/loadPension")
+    public void loadPension(){
+        ps.loadPension();
+    }
 
 }
+
+
+
+
