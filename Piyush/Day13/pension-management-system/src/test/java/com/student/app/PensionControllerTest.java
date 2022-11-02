@@ -41,7 +41,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
      void testCreateApplicant() throws Exception{
         Pension p = new Pension();
         p.setId(201);
-        p.setName("Sivani");
+        p.setName("Harsh");
         p.setAge(22);
         p.setBalance(90000);
         p.setMobile("9988776655");
@@ -75,7 +75,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
      void testEditApplicant() throws Exception{
         Pension p = new Pension();
         p.setId(201);
-        p.setName("Sivani");
+        p.setName("Harsh");
         p.setAge(22);
         p.setBalance(90000);
         p.setMobile("9988776655");
@@ -104,7 +104,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
      void testGetApplicant() throws Exception{
         Pension p = new Pension();
         p.setId(201);
-        p.setName("Sivani");
+        p.setName("Harsh");
         p.setAge(22);
         p.setBalance(90000);
         p.setMobile("9988776655");
@@ -131,7 +131,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
     void testGetAllApplicants() throws Exception{
         Pension p = new Pension();
         p.setId(201);
-        p.setName("Sivani");
+        p.setName("Harsh");
         p.setAge(22);
         p.setBalance(90000);
         p.setMobile("9988776655");
@@ -142,7 +142,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
         Pension p2 = new Pension();
         p2.setId(202);
-        p2.setName("Srinu");
+        p2.setName("Rupal");
         p2.setAge(62);
         p2.setBalance(93000);
         p2.setMobile("8888776655");
@@ -174,7 +174,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
     void deleteApplication() throws Exception {
         Pension p = new Pension();
         p.setId(201);
-        p.setName("Sivani");
+        p.setName("Harsh");
         p.setAge(22);
         p.setBalance(90000);
         p.setMobile("9988776655");
