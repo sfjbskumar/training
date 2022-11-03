@@ -1,0 +1,6 @@
+version: '3.2'
+services:
+  sprig-boot-app:
+    image: sivani170301/pension-management-system:0.0.1-SNAPSHOT
+    ports:
+      - "8081:8081"

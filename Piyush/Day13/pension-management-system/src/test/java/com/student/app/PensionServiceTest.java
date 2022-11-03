@@ -25,8 +25,8 @@ class PensionServiceTest{
     @Test
     void testGetAllApplicants(){
         when(pensionRepository.findAll()).thenReturn(Stream
-                .of(new PensionBuilder().setId(201).setName("Sivani").setAge(21).setBalance(80000).setMobile("9988776655").setEmpStatus("A").setPensionStatus("N").setPensionMMYY("0922").setInstallment(1000).createPension(),
-                        new PensionBuilder().setId(202).setName("Srinu").setAge(60).setBalance(90000).setMobile("8899776655").setEmpStatus("R").setPensionStatus("Y").setPensionMMYY("0922").setInstallment(1200).createPension()).collect(Collectors.toList()));
+                .of(new PensionBuilder().setId(201).setName("Harsh").setAge(21).setBalance(80000).setMobile("9988776655").setEmpStatus("A").setPensionStatus("N").setPensionMMYY("0922").setInstallment(1000).createPension(),
+                        new PensionBuilder().setId(202).setName("Rupal").setAge(60).setBalance(90000).setMobile("8899776655").setEmpStatus("R").setPensionStatus("Y").setPensionMMYY("0922").setInstallment(1200).createPension()).collect(Collectors.toList()));
         assertEquals(2, pensionService.getAllApplicants().size());
     }
 
@@ -35,7 +35,7 @@ class PensionServiceTest{
         int id=201;
         PensionBuilder pensionBuilder = new PensionBuilder();
         pensionBuilder.setId(id);
-        pensionBuilder.setName("Sivani");
+        pensionBuilder.setName("Harsh");
         pensionBuilder.setAge(21);
         pensionBuilder.setBalance(80000);
         pensionBuilder.setMobile("9988776655");
@@ -63,7 +63,7 @@ class PensionServiceTest{
 
         Pension p = new PensionBuilder().createPension();
         p.setId(201);
-                p.setName("Sivani");
+                p.setName("Harsh");
                 p.setAge(22);
                 p.setBalance(90000);
                 p.setMobile("9988776655");
@@ -79,7 +79,7 @@ class PensionServiceTest{
     @Test
     void testDelete(){
         int id=201;
-        Pension p = new PensionBuilder().setId(id).setName("Sivani").setAge(21).setBalance(80000).setMobile("9988776655").setEmpStatus("A").setPensionStatus("N").setPensionMMYY("0922").setInstallment(1000).createPension();
+        Pension p = new PensionBuilder().setId(id).setName("Harsh").setAge(21).setBalance(80000).setMobile("9988776655").setEmpStatus("A").setPensionStatus("N").setPensionMMYY("0922").setInstallment(1000).createPension();
         pensionService.delete(id);
         verify(pensionRepository, times(1)).deleteById(any());
     }
@@ -87,7 +87,7 @@ class PensionServiceTest{
    @Test
     void testGetStatus(){
         int id=201;
-        Pension p = new PensionBuilder().setId(id).setName("Sivani").setAge(21).setBalance(80000).setMobile("9988776655").setEmpStatus("A").setPensionStatus("N").setPensionMMYY("0922").setInstallment(1000).createPension();
+        Pension p = new PensionBuilder().setId(id).setName("Harsh").setAge(21).setBalance(80000).setMobile("9988776655").setEmpStatus("A").setPensionStatus("N").setPensionMMYY("0922").setInstallment(1000).createPension();
         when(pensionRepository.getEmpStatus(id)).thenReturn("A");
         assertEquals("A",pensionRepository.getEmpStatus(id));
        when(pensionRepository.getPensionStatus(id)).thenReturn("N");
@@ -97,7 +97,7 @@ class PensionServiceTest{
     @Test
     void testGetBalanceDetails(){
         int id=201;
-        Pension p = new PensionBuilder().setId(id).setName("Sivani").setAge(21).setBalance(80000).setMobile("9988776655").setEmpStatus("A").setPensionStatus("N").setPensionMMYY("0922").setInstallment(1000).createPension();
+        Pension p = new PensionBuilder().setId(id).setName("Harsh").setAge(21).setBalance(80000).setMobile("9988776655").setEmpStatus("A").setPensionStatus("N").setPensionMMYY("0922").setInstallment(1000).createPension();
         when(pensionRepository.getBalance(id)).thenReturn("80000");
         assertEquals("80000",pensionRepository.getBalance(id));
         when(pensionRepository.getInstallment(id)).thenReturn("1000");

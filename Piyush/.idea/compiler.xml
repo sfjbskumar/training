@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pension-management-system" />
+        <module name="student-microservice" />
+        <module name="artemis-demo-consumer" />
+        <module name="Calculator-spring-boot (1)" />
+        <module name="Calculator-spring-boot" />
+        <module name="artemis-demo-producer" />
+        <module name="simple-maven-app" />
+        <module name="spring-calculator" />
+        <module name="student-microservice-security" />
+        <module name="demo" />
+        <module name="school-service" />
+        <module name="eureka-server" />
+        <module name="rabbitmq-demo-consumer" />
+        <module name="rabbitmq-demo-producer" />
+        <module name="myfirst-spring-boot" />
+        <module name="demo (2)" />
+        <module name="demo (1)" />
+        <module name="spring-boot-app" />
+        <module name="spring-caller" />
+        <module name="demo (4)" />
+        <module name="gateway-service" />
+        <module name="demo (3)" />
+        <module name="student-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="artemis-demo-consumer" target="11" />
+      <module name="artemis-demo-producer" target="11" />
+      <module name="Calculator-spring-boot" target="11" />
+      <module name="Calculator-spring-boot (1)" target="11" />
+      <module name="demo" target="1.8" />
+      <module name="demo (1)" target="1.8" />
+      <module name="demo (2)" target="1.8" />
+      <module name="demo (3)" target="1.8" />
+      <module name="demo (4)" target="1.8" />
+      <module name="eureka-app" target="1.8" />
+      <module name="eureka-server" target="11" />
+      <module name="fourth-artemis-demo" target="11" />
+      <module name="fourth-rabbit-demo" target="1.5" />
+      <module name="gateway-service" target="11" />
+      <module name="myfirst-spring-boot" target="11" />
+      <module name="pension-management-system" target="11" />
+      <module name="rabbitmq-demo-consumer" target="1.5" />
+      <module name="rabbitmq-demo-producer" target="1.5" />
+      <module name="school-service" target="11" />
+      <module name="simple-maven-app" target="11" />
+      <module name="spring-boot-app" target="11" />
+      <module name="spring-calculator" target="11" />
+      <module name="spring-caller" target="11" />
+      <module name="spring-rest-communication" target="11" />
+      <module name="student-microservice" target="11" />
+      <module name="student-microservice-security" target="11" />
+      <module name="student-service" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

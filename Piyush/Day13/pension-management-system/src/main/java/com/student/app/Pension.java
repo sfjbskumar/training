@@ -5,15 +5,13 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Column;
 
-@Entity(name="pensions")
-@Table(name="pensions")
+@Entity(name = "pensiondetails")
+@Table(name = "pensiondetails")
 public class Pension {
     @Id
     private int id;
     @Column
     private String name;
-
-
     @Column
     private int age;
     @Column

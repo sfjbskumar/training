@@ -23,81 +23,81 @@ mvn spring-boot:run
 # 1.Creating Applicant (Admin's operation)
 POST 
 ``` 
-http://localhost:8081/create/applicant
+http://localhost:8082/create/applicant
 ``` 
 Accept: application/json
 Content-type: application/json
 Body:
 ``` 
 {
-    "id":107,
-    "name":"Sirisha",
-    "age":62,
-    "balance":109000,
-    "mobile":"9888995522",
-    "empStatus":"R",
-    "pensionStatus":"N",
-    "pensionMMYY":"0922",
-    "installment":1020
+    "id": 105,
+    "name": "Alisha",
+    "age": 22,
+    "balance": 11990,
+    "mobile": "9949586034",
+    "empStatus": "A",
+    "pensionStatus": "N",
+    "pensionMMYY": "0822",
+    "installment": 1000
 }
 ``` 
 
 # 2.Editing Applicant details (Admin's operation)
 POST
 ```
-http://localhost:8081/edit/applicant
+http://localhost:8082/edit/applicant
 ```
 Accept: application/json
 Content-type: application/json
 Body:
 ``` 
 {
-    "id":107,
-    "name":"Sirisha S.",
-    "age":62,
-    "balance":109000,
-    "mobile":"9888995522",
-    "empStatus":"R",
-    "pensionStatus":"N",
-    "pensionMMYY":"0922",
-    "installment":1020
+    "id": 105,
+    "name": "Alisha",
+    "age": 22,
+    "balance": 11990,
+    "mobile": "9949586034",
+    "empStatus": "A",
+    "pensionStatus": "N",
+    "pensionMMYY": "0822",
+    "installment": 1000
 }
 ``` 
 # 3.Approve the pension application if empStatus is R, i.e., retired (Admin's operation)
 POST
 ``` 
-http://localhost:8081/approve/107
+http://localhost:8082/approve/105
 ``` 
 
 # 4.Issue Pensions for all Retired employees (Admin's operation)
 POST
 ``` 
-http://localhost:8081/issuePension
+http://localhost:8082/issuePension
 ``` 
 
 # 5.Load Pensions for all Active employees (Admin's operation)
 POST
 ``` 
-http://localhost:8081/loadPension
+http://localhost:8082/loadPension
 ``` 
 
 # 6. Check Balance (User's operation)
 GET 
 ``` 
-http://localhost:8081/checkBalance/107
+http://localhost:8082/checkBalance/105
 ``` 
 
 # 7. Check Status (User's operation)
 GET
 ``` 
-http://localhost:8081/checkStatus/107
+http://localhost:8082/checkStatus/105
 ``` 
 
 # 8. Check Application Information (User's operation)
 
 GET
 ``` 
-http://localhost:8081/checkApplication/107
+http://localhost:8082/checkApplication/105
 ``` 
 
 # Extra operations for testing
@@ -105,11 +105,11 @@ http://localhost:8081/checkApplication/107
 Fetch All Applications
 GET
 ``` 
-http://localhost:8081/get/applicants
+http://localhost:8082/get/applicants
 ``` 
 
 Delete application
 DELETE
 ``` 
-http://localhost:8081/delete/applicant/101
+http://localhost:8082/delete/applicant/101
 ``` 
